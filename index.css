@@ -25,20 +25,31 @@ body {
     /* position: relative; */
 }
 
+a, a:visited {
+    color: inherit;
+}
+
 header {
     display: flex;
     padding: 1em;
     margin-bottom: 3em;
 }
 
+header h1 {
+    color: var(--primary);
+    font-weight: 700;
+    font-stretch: 125%;
+    font-size: 3.5em;
+    margin: 0;
+}
+
 header .right {
     margin-left: auto;
 }
 
-header h1 {
-    color: var(--primary);
-    font-size: 3em;
-    margin: 0;
+header .right h1 {
+    font-weight: 400;
+    font-stretch: 100%;
 }
 
 header p {

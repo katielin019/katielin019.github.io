@@ -1,0 +1,54 @@
+:root {
+    --system-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Helvetica Neue", Arial, sans-serif;
+    /* https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ */
+    --primary: #FF5733;
+    --secondary: #9999FF;
+}
+
+body {
+    font-family: var(--system-ui);
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+header {
+    display: flex;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+header h1 {
+    color: var(--primary);
+    font-weight: 700;
+    font-stretch: 125%;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+header .left a, a:visited {
+    text-decoration: none;
+}
+
+header .right {
+    margin-left: auto;
+}
+
+header .right h1 {
+    font-weight: 400;
+    font-stretch: 100%;
+}
+
+header p {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 0;
+}
+
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+}

@@ -18,7 +18,57 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 5em;
 }
+
+.pinned-bottom {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--primary);
+    background-color: white;
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+.pinned-bottom p {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.pinned-bottom .row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5em;
+}
+
+.pinned-bottom .project {
+    /* position: fixed; */
+    font-size: 3em;
+    font-weight: 600;
+    /* margin-right: 2em; */
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.pinned-bottom .description {
+    width: 40%;
+    /* justify-content: right; */
+    /* position: fixed; */
+    right: 0;
+    /* position: relative; */
+    /* margin-left: auto; */
+    margin-right: 1em;
+    /* float: right; */
+}
+
+/* .pinned-bottom a {
+    color: var(--primary);
+    text-decoration: none;
+} */
 
 .block {
     width: 100px;

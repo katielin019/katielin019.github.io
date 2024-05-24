@@ -4,7 +4,6 @@
     /* https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ */
     --primary: #FF5733;
     --secondary: #9999FF;
-    /* --secondary: #0033FF; */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
     --red: hsl(0 100% 50%);
     --orange: hsl(30 100% 50%);
@@ -22,11 +21,18 @@
 
 body {
     font-family: var(--system-ui);
+    /* box-sizing: border-box; */
+    /* position: relative; */
 }
 
 header {
+    display: flex;
     padding: 1em;
     margin-bottom: 3em;
+}
+
+header .right {
+    margin-left: auto;
 }
 
 header h1 {
@@ -49,7 +55,6 @@ header p {
 }
 
 .block {
-    display: inline-block;
     width: 100px;
     height: 100px;
     margin: 10px;

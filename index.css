@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
     --red: hsl(0 100% 50%);
@@ -47,6 +49,7 @@
 .pinned-bottom .project {
     font-size: 3em;
     font-weight: 600;
+
     margin: 0;
     padding: 0;
     width: 60%;

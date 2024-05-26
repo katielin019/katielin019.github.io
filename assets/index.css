@@ -20,102 +20,93 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* padding-left: 1em;
+    padding-right: 1em; */
     padding-bottom: 5em;
 }
 
-.pinned-bottom {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: var(--primary);
-    background-color: white;
-    margin-left: 1em;
-    padding-bottom: 0.5em;
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: 0;
 }
 
-.pinned-bottom p {
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.pinned-bottom .row {
+.sidebar {
     display: flex;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.5em;
-}
-
-.pinned-bottom .project {
-    font-size: 3em;
-    font-weight: 600;
-
-    margin: 0;
-    padding: 0;
-    width: 60%;
-}
-
-.pinned-bottom .description {
-    width: 40%;
-    right: 0;
+    flex-direction: column;
+    align-items: center;
     margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px solid var(--primary);
 }
 
-/* .pinned-bottom a {
-    color: var(--primary);
-    text-decoration: none;
-} */
+#work {
+    /* display: block; */
+    background-color: var(--orange);
+    /* padding: 1em; */
+    color: white;
+}
 
 .block {
-    width: 100px;
+    /* width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 10px; */
+    width: 20em;
+    height: 10em;
+    margin: 1em;
 }
 
-div:nth-child(1 of div.block) {
+div:nth-child(1 of div.block-color) {
     background-color: var(--red);
 }
 
-div:nth-child(2 of div.block) {
+div:nth-child(2 of div.block-color) {
     background-color: var(--orange);
 }
 
-div:nth-child(3 of div.block) {
+div:nth-child(3 of div.block-color) {
     background-color: var(--yellow);
 }
 
-div:nth-child(4 of div.block) {
+div:nth-child(4 of div.block-color) {
     background-color: var(--lime);
 }
 
-div:nth-child(5 of div.block) {
+div:nth-child(5 of div.block-color) {
     background-color: var(--green);
 }
 
-div:nth-child(6 of div.block) {
+div:nth-child(6 of div.block-color) {
     background-color: var(--mint);
 }
 
-div:nth-child(7 of div.block) {
+div:nth-child(7 of div.block-color) {
     background-color: var(--aqua);
 }
 
-div:nth-child(8 of div.block) {
+div:nth-child(8 of div.block-color) {
     background-color: var(--azure);
 }
 
-div:nth-child(9 of div.block) {
+div:nth-child(9 of div.block-color) {
     background-color: var(--blue);
 }
 
-div:nth-child(10 of div.block) {
+div:nth-child(10 of div.block-color) {
     background-color: var(--purple);
 }
 
-div:nth-child(11 of div.block) {
+div:nth-child(11 of div.block-color) {
     background-color: var(--fuchsia);
 }
 
-div:nth-child(12 of div.block) {
+div:nth-child(12 of div.block-color) {
     background-color: var(--pink);
+}
+
+.block-white {
+    background-color: white;
 }

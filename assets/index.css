@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 :root {
+    --primary: #FF5733;
+    --secondary: #9999FF;
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
     --red: hsl(0 100% 50%);
     --orange: hsl(30 100% 50%);
@@ -44,16 +46,27 @@ h2 {
 }
 
 #work {
-    /* display: block; */
     background-color: var(--orange);
-    /* padding: 1em; */
+    color: white;
+}
+
+#play {
+    /* display: block; */
+    background-color: var(--primary);
+    color: white;
+}
+
+/* #learn {
+    background-color: var(--secondary);
+    color: white;
+} */
+
+#colophon {
+    background-color: var(--secondary);
     color: white;
 }
 
 .block {
-    /* width: 100px;
-    height: 100px;
-    margin: 10px; */
     width: 20em;
     height: 10em;
     margin: 1em;

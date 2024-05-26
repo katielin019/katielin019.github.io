@@ -59,7 +59,55 @@ h2 {
     margin: 1em;
 }
 
-div:nth-child(1 of div.block-color) {
+.red {
+    background-color: var(--red);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.lime {
+    background-color: var(--lime);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.mint {
+    background-color: var(--mint);
+}
+
+.aqua {
+    background-color: var(--aqua);
+}
+
+.azure {
+    background-color: var(--azure);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.fuchsia {
+    background-color: var(--fuchsia);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+/* div:nth-child(1 of div.block-color) {
     background-color: var(--red);
 }
 
@@ -105,7 +153,7 @@ div:nth-child(11 of div.block-color) {
 
 div:nth-child(12 of div.block-color) {
     background-color: var(--pink);
-}
+} */
 
 .block-white {
     background-color: white;

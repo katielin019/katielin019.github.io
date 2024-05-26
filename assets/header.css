@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+:root {
+    /* https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ */
+    --primary: #FF5733;
+    --secondary: #9999FF;
+}
+
+header {
+    padding: 1em;
+    margin-bottom: 3em;
+    height: 30em;
+    /* border-bottom: 1px solid var(--primary); */
+}
+
+header .row {
+    display: flex;
+    padding-bottom: 4em;
+}
+
+header h1 {
+    color: var(--primary);
+    font-weight: 700;
+    font-stretch: 125%;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+header .left a, a:visited {
+    text-decoration: none;
+}
+
+header .right {
+    margin-left: auto;
+}
+
+header .right h1 {
+    font-weight: 400;
+    font-stretch: 100%;
+}
+
+header p {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: black;
+    /* color: var(--secondary); */
+    margin: 0;
+}

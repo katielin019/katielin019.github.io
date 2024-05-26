@@ -6,6 +6,19 @@
     /* https://htmlcolorcodes.com/color-chart/web-safe-color-chart/ */
     --primary: #FF5733;
     --secondary: #9999FF;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value */
+    --red: hsl(0 100% 50%);
+    --orange: hsl(30 100% 50%);
+    --yellow: hsl(60 100% 50%);
+    --lime: hsl(90 100% 50%);
+    --green: hsl(120 100% 50%);
+    --mint: hsl(150 100% 50%);
+    --aqua: hsl(180 100% 50%);
+    --azure: hsl(210 100% 50%);
+    --blue: hsl(240 100% 50%);
+    --purple: hsl(270 100% 50%);
+    --fuchsia: hsl(300 100% 50%);
+    --pink: hsl(330 100% 50%);
 }
 
 body {
@@ -13,8 +26,23 @@ body {
     color: var(--primary);
     margin: 0;
     padding: 0;
-    /* overflow-y: hidden; */
     overflow-x: hidden;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1em;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    align-items: center;
+    margin-right: 1em;
+    padding-right: 1em;
+    /* border-right: 1px solid var(--primary); */
+    /* position: absolute;
+    bottom: 0; */
 }
 
 main {
@@ -24,103 +52,95 @@ main {
     padding: 0px;
 }
 
+#work {
+    background-color: var(--orange);
+    color: white;
+}
+
+#play {
+    background-color: var(--primary);
+    color: white;
+}
+
+#colophon {
+    background-color: var(--secondary);
+    color: white;
+}
+
 a, a:visited {
     color: inherit;
 }
 
-header {
-    padding: 1em;
-    margin-bottom: 3em;
-    height: 30em;
-    /* border-bottom: 1px solid var(--primary); */
-}
-
-header .row {
-    display: flex;
-    padding-bottom: 2em;
-}
-
-header h1 {
-    color: var(--primary);
+h2 {
+    font-size: 2em;
     font-weight: 700;
-    font-stretch: 125%;
-    font-size: 3.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     margin: 0;
 }
 
-header row .left a, a:visited {
-    text-decoration: none;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5em;
 }
 
-header .right {
-    margin-left: auto;
+.block {
+    width: 20em;
+    height: 10em;
+    margin: 1em;
 }
 
-header .right h1 {
-    font-weight: 400;
-    font-stretch: 100%;
+.red {
+    background-color: var(--red);
 }
 
-header p {
-    font-size: 1.15em;
-    font-weight: 500;
-    color: black;
-    /* color: var(--secondary); */
-    margin: 0;
+.orange {
+    background-color: var(--orange);
 }
 
-.css-toggle-switch {
-	display: none;
+.yellow {
+    background-color: var(--yellow);
 }
 
-.css-toggle-switch + label:before {
-	content: "Hide ";
+.lime {
+    background-color: var(--lime);
 }
 
-.css-toggle-switch:checked + label:before {
-	content: "Show ";
+.green {
+    background-color: var(--green);
 }
 
-.css-toggle-switch:checked ~ * .css-toggle-content {
-	display: none;
+.mint {
+    background-color: var(--mint);
 }
 
-.css-toggle-switch + label {
-	cursor: pointer;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-    user-select: none;
+.aqua {
+    background-color: var(--aqua);
 }
 
-.btn {
-	padding: 5px 10px;
-	background: white;
-	border: 1px solid grey;
-	border-radius: 3px;
-	/* width: 12em; */
-	display: inline-block;
-	text-align: center;
+.azure {
+    background-color: var(--azure);
 }
 
-.btn:hover {
-	background: #e6e6e6;
-	-webkit-box-shadow: inset 0 -1px 0 #dddddd;
-	-moz-box-shadow: inset 0 -1px 0 #dddddd;
-	box-shadow: inset 0 -1px 0 #dddddd;
+.blue {
+    background-color: var(--blue);
 }
 
-.panel {
-	padding: 15px;
-	background: #ffe06d;
-	border: 1px solid #d69e01;
-	border-radius: 3px;
+.purple {
+    background-color: var(--purple);
 }
 
-pre {
-	padding: 5px;
-	margin-bottom: 0;
-	background: #eaeaea;
-	border: 1px solid grey;
+.fuchsia {
+    background-color: var(--fuchsia);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.block-white {
+    background-color: white;
 }

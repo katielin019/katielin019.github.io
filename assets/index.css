@@ -107,54 +107,6 @@ h2 {
     background-color: var(--pink);
 }
 
-/* div:nth-child(1 of div.block-color) {
-    background-color: var(--red);
-}
-
-div:nth-child(2 of div.block-color) {
-    background-color: var(--orange);
-}
-
-div:nth-child(3 of div.block-color) {
-    background-color: var(--yellow);
-}
-
-div:nth-child(4 of div.block-color) {
-    background-color: var(--lime);
-}
-
-div:nth-child(5 of div.block-color) {
-    background-color: var(--green);
-}
-
-div:nth-child(6 of div.block-color) {
-    background-color: var(--mint);
-}
-
-div:nth-child(7 of div.block-color) {
-    background-color: var(--aqua);
-}
-
-div:nth-child(8 of div.block-color) {
-    background-color: var(--azure);
-}
-
-div:nth-child(9 of div.block-color) {
-    background-color: var(--blue);
-}
-
-div:nth-child(10 of div.block-color) {
-    background-color: var(--purple);
-}
-
-div:nth-child(11 of div.block-color) {
-    background-color: var(--fuchsia);
-}
-
-div:nth-child(12 of div.block-color) {
-    background-color: var(--pink);
-} */
-
 .block-white {
     background-color: white;
 }

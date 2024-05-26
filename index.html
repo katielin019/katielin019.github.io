@@ -3,27 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="assets/shared.css">
+    <link rel="stylesheet" type="text/css" href="assets/header.css">
     <title>Katie Lin</title>
 </head>
 <body>
-    <header>
-        <h1>Katie Lin</h1>
-        <p>software engineer, ui prototyper</p>
+    <header id="top">
+        <div class="row">
+            <a href="#top">
+                <div class="left">
+                    <h1>Katie Lin</h1>
+                    <p>software engineer, ui prototyper</p>
+                </div>
+            </a>
+            <div class="right">
+                <h1><a href="info.html">Info</a></h1>
+            </div>
+        </div>
+        <div class="info-container"></div>
+        <div class="sidebar">
+            <nav>
+                <a href="#top">Home</a>
+                <a href="#work">Work</a>
+                <a href="#play">Play</a>
+                <a href="#now">Now</a>
+                <a href="#colophon">Colophon</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-    </div>
+    <main>
+        <div id="work">
+            <h2>Work</h2>
+            <div class="container">
+                <div class="block block-color red"></div>
+                <div class="block block-color orange"></div>
+                <div class="block block-color yellow"></div>
+                <div class="block block-color lime"></div>
+                <div class="block block-color green"></div>
+                <div class="block block-color mint"></div>
+                <div class="block block-color aqua"></div>
+                <div class="block block-color azure"></div>
+            </div>
+        </div>
+        <div id="play">
+            <h2>Play</h2>
+            <div class="container">
+                <div class="block block-color red"></div>
+                <div class="block block-color orange"></div>
+                <div class="block block-color yellow"></div>
+                <div class="block block-color lime"></div>
+                <div class="block block-color green"></div>
+                <div class="block block-color mint"></div>
+                <div class="block block-color aqua"></div>
+                <div class="block block-color azure"></div>
+            </div>
+        </div>
+        <div id="now">
+            <h2>Now</h2>
+            <div class="container">
+                <div class="block block-color blue"></div>
+                <div class="block block-color purple"></div>
+                <div class="block block-color fuchsia"></div>
+                <div class="block block-color pink"></div>
+            </div>
+        </div>
+        <div id="colophon">
+            <h2>Colophon</h2>
+            <div class="container">
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="links">
+                <a href="https://www.are.na/" target="_blank">Are.na</a> &nbsp;
+                <a href="https://www.github.com" target="_blank">GitHub</a> &nbsp;
+                <a href="https://www.letterboxd.com" target="_blank">Letterboxd</a>
+        </div>
+    </main>
 </body>
 </html>

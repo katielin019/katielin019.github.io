@@ -37,7 +37,7 @@ main {
 }
 
 #work {
-    background-color: var(--orange);
+    background-color: var(--secondary);
     color: white;
 }
 
@@ -46,8 +46,8 @@ main {
     color: white;
 }
 
-#colophon {
-    background-color: var(--secondary);
+#now {
+    background-color: var(--orange);
     color: white;
 }
 

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/shared.css">
-    <link rel="stylesheet" type="text/css" href="assets/info.css">
-    <title>Info — Katie Lin</title>
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <title>Katie Lin</title>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <h1><a href="index.html">Katie Lin</a></h1>
-            <p>software engineer, ui prototyper</p>
+    <header id="top">
+        <div class="row">
+            <div class="left">
+                <h1><a href="#top">Katie Lin</a></h1>
+                <p>software engineer, ui prototyper</p>
+            </div>
+            <div class="right">
+                <h1><a href="info.html">Info</a></h1>
+            </div>
         </div>
-        <div class="right">
-            <h1><a href="info.html">Info</a></h1>
-        </div>
-    </header>
-    <main>
-        <div class="container">
+        <div class="info-container">
             <div class="grid-col left">
                 <h2>add a blurb about myself. try to aim for 2 complete sentences</h2>
                 <br>
@@ -37,6 +37,55 @@
                     <a href="https://www.letterboxd.com" target="_blank">Letterboxd</a>
                 </div>
             </div>
+        </div>
+    </header>
+    <main>
+        <div id="work">
+            <h2>Work</h2>
+            <div class="container">
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+            </div>
+        </div>
+        <div id="play">
+            <h2>Play</h2>
+            <div class="container">
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+                <div class="block block-white"></div>
+            </div>
+        </div>
+        <div id="now">
+            <h2>Now</h2>
+            <div class="container">
+                <div class="block block-color fuchsia"></div>
+                <div class="block block-color purple"></div>
+                <div class="block block-color blue"></div>
+                <div class="block block-color orange"></div>
+            </div>
+        </div>
+        <div id="colophon">
+            <h2>Colophon</h2>
+            <div class="container">
+                <div class="block block-color yellow"></div>
+                <div class="block block-color mint"></div>
+                <div class="block block-color azure"></div>
+                <div class="block block-color pink"></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#play">Play</a></li>
+                    <li><a href="#now">Now</a></li>
+                    <li><a href="#colophon">Colophon</a></li>
+                </ul>
+            </nav>
         </div>
     </main>
 </body>

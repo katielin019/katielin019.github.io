@@ -81,17 +81,17 @@ header p {
 	content: "Show ";
 }
 
-.css-toggle-switch:checked ~ .css-toggle-content {
+.css-toggle-switch:checked ~ * .css-toggle-content {
 	display: none;
 }
 
 .css-toggle-switch + label {
 	cursor: pointer;
 	-webkit-touch-callout: none;
-	-webkit-user-select: none;
+    -webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	-user-select: none;
+    user-select: none;
 }
 
 .btn {
@@ -99,7 +99,7 @@ header p {
 	background: white;
 	border: 1px solid grey;
 	border-radius: 3px;
-	width: 12em;
+	/* width: 12em; */
 	display: inline-block;
 	text-align: center;
 }

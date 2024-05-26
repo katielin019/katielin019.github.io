@@ -27,6 +27,28 @@
     padding-bottom: 5em;
 }
 
+.info-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.info-container h2 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.info-container h4 {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.info-container p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
 h2 {
     font-size: 2em;
     font-weight: 700;

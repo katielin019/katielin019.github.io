@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>untitled_document</title>
+    <title>KATIE LIN</title>
     <style>
         :root {
-            --back-color: #9999FF;
+            --accent-color: #9999FF;
             /* --back-color: #FF5733; */
-            --text-color: rgb(27, 27, 27);
-            /* --back-color: rgb(30, 30, 30);
-            --text-color: rgb(212, 212, 212); */
+            /* --text-color: rgb(27, 27, 27); */
+            --back-color: rgb(30, 30, 30);
+            --text-color: rgb(212, 212, 212);
         }
 
-        /* minimalist reset */
         * {
             padding: 0;
             margin: 0;
@@ -35,10 +34,22 @@
         }
 
         h1 {
-            font-size: 1.2em;
+            font-size: 1.4em;
+            font-stretch: 125%;
             font-weight: 800;
             display: inline;
             margin-right: 5px;
+        }
+
+        a[href="index.html"] {
+            text-decoration: none;
+            
+        }
+
+        a[href="index.html"]:hover, a[href="index.html"]:focus {
+            color: var(--back-color);
+            background-color: var(--accent-color);
+            font-stretch: 150%;
         }
 
         h2 {
@@ -68,8 +79,7 @@
             color: inherit;
         }
 
-        a:hover,
-        a:focus {
+        a:hover, a:focus {
             color: var(--back-color);
             background-color: var(--text-color);
         }
@@ -115,10 +125,9 @@
 
 
 <main>
-    <h1><a href="index.html">Pascal [Cal] Lin</a></h1>
+    <h1 id="home"><a href="index.html">KATIE LIN</a></h1>
     
-    <h2>Hi, I'm Cal</h2>
-    <!-- <h3>I'm a software engineer and UX prototyper</h3> -->
+    <h2>Hi, I'm Katie</h2>
     <p>I'm a software engineer and UX prototyper.<br><br>
     I was born and raised in San Diego, CA. Over the past five years, I've split my time between San Diego and Pittsburgh, PA.
     I just graduated from Carnegie Mellon University with a Bachelor's of Science in Information Systems.<br><br>

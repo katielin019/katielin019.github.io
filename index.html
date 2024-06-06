@@ -62,6 +62,10 @@
             font-weight: 400;
             margin-bottom: 30px;
         }
+        
+        sup {
+            font-size: 0.75em;
+        }
 
         footer {
             text-align: right;
@@ -113,6 +117,8 @@
             main {
                 max-width: 600px;
                 padding: 16px;
+                /* background-color: var(--text-color);
+                color: var(--back-color); */
             }
 
             h2 {
@@ -128,10 +134,13 @@
     <h1 id="home"><a href="index.html">KATIE LIN</a></h1>
     
     <h2>Hi, I'm Katie</h2>
-    <p>I'm a software engineer and UX prototyper.<br><br>
-    I was born and raised in San Diego, CA. Over the past five years, I've split my time between San Diego and Pittsburgh, PA.
-    I just graduated from Carnegie Mellon University with a Bachelor's of Science in Information Systems.<br><br>
-    Right now, I'm enjoying some time off after graduating and figuring out what's next.</p>
+    <p>I'm a software engineer and UX prototyper.</p>
+    <p>I was born and raised in San Diego, CA. Over the past five years, I've split my time between San Diego and Pittsburgh, PA. 
+        I just graduated from Carnegie Mellon University with a Bachelor's of Science in Information Systems.</p>
+    <p>Right now, I'm enjoying some time off after graduating and figuring out what's next.</p>
+    <p>The website you're viewing now is a "shitty first draft"<sup><a id="footnote-1" href="#1">1</a></sup>.
+    </p>
+
     
     
     <div style="border: 1px solid #333; margin-top: 5rem; padding: 1.5rem">
@@ -165,6 +174,10 @@
             <a href="/computer-science-open-data/#verified-computer-science-phd-stipends">Verified Computer Science Ph.D. Stipends</a>
         </p>
     </div>
+    <br>
+    <p class="footnotes">
+        <sup><a id="1" href="#footnote-1">1</a></sup> "Almost all good writing begins with terrible first efforts" — Anne Lamott, <i>Bird by Bird</i>
+    </p>
     
     <footer>This page is <a href="http://jeffhuang.com/designed_to_last/">designed to last</a>.</footer>
     </main>    

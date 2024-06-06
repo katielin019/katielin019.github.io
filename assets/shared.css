@@ -62,6 +62,7 @@ main {
 
 a, a:visited {
     color: inherit;
+    text-decoration-color: white;
 }
 
 h2 {

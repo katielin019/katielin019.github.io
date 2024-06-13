@@ -1,7 +1,26 @@
 :root {
-    --accent-color: #9999FF;
-    --bg-color: rgb(30, 30, 30);
+    /* --accent-color: #9999FF; */
+    --accent-color: hsl(200, 92%, 69%);
+    /* --bg-color: rgb(30, 30, 30); */
     --text-color: rgb(212, 212, 212);
+
+    /* --bg-color: #cdecff;
+    --text-color: rgb(30, 30, 30); */
+
+    /* --soft-green: hsl(137deg 50% 84%);
+    --pink: hsl(323deg 100% 90%);
+    --yellow: hsl(38deg 96% 90%);
+    --mint-green: hsl(158deg 66% 77%);
+    --soft-blue: hsl(203deg 100% 90%); */
+
+    /* --bg-color: rgba(3, 19, 0, 0.95); */
+    --bg-color: rgb(3, 19, 0);
+    /* --text-color: hsla(0,0%,100%,.4); */
+
+    
+
+
+    /* --text-color: hsla(0,0%,100%,.4); */
 }
 
 * {

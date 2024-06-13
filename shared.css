@@ -1,6 +1,7 @@
 :root {
     /* --accent-color: #9999FF; */
-    --accent-color: hsl(200, 92%, 69%);
+    /* --accent-color: hsl(200, 92%, 69%); */
+    --accent-color: hsl(12, 90%, 52%);
     /* --bg-color: rgb(30, 30, 30); */
     --text-color: rgb(212, 212, 212);
 
@@ -14,7 +15,7 @@
     --soft-blue: hsl(203deg 100% 90%); */
 
     /* --bg-color: rgba(3, 19, 0, 0.95); */
-    --bg-color: rgb(3, 19, 0);
+    --bg-color: rgb(4, 21, 1);
     /* --text-color: hsla(0,0%,100%,.4); */
 
     

@@ -45,7 +45,7 @@ a[href="index.html"] {
     text-decoration: none;
 }
 
-a[href="index.html"]:hover, a[href="index.html"]:focus {
+a[href$=".html"]:hover, a[href$=".html"]:focus {
     color: var(--bg-color);
     background-color: var(--accent-color);
 }
@@ -83,7 +83,7 @@ footer {
 
 #custom-header > .css-toggle-content {
     font-weight: 300;
-    font-size: 0.7em;
+    font-size: 1rem;
 }
 
 #custom-header > label:hover {
@@ -101,12 +101,3 @@ footer {
 .css-toggle-switch:checked ~ .css-toggle-content {
     display: none;
 }
-
-/* span {
-    color: var(--accent-color);
-} */
-
-/* span:hover {
-    color: var(--bg-color);
-    background-color: var(--accent-color);
-} */

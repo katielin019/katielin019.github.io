@@ -15,7 +15,7 @@
     --soft-blue: hsl(203deg 100% 90%); */
 
     /* --bg-color: rgba(3, 19, 0, 0.95); */
-    --bg-color: rgb(4, 21, 1);
+    --bg-color: rgb(2, 18, 1);
     /* --text-color: hsla(0,0%,100%,.4); */
 
     --secondary-text-color: rgb(182, 182, 182);
@@ -84,6 +84,18 @@ sup {
 
 sup > a {
     text-decoration: none;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header > p {
+    /* font-size: 0.8em;
+    font-weight: 300; */
+    color: var(--secondary-text-color);
+    padding-top: 10px;
+    font-size: 1rem;
 }
 
 footer {

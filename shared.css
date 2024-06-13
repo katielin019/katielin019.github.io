@@ -18,10 +18,7 @@
     --bg-color: rgb(4, 21, 1);
     /* --text-color: hsla(0,0%,100%,.4); */
 
-    
-
-
-    /* --text-color: hsla(0,0%,100%,.4); */
+    --secondary-text-color: rgb(182, 182, 182);
 }
 
 * {
@@ -120,4 +117,12 @@ footer {
 
 .css-toggle-switch:checked ~ .css-toggle-content {
     display: none;
+}
+
+.css-toggle-content {
+    display: block;
+    padding: 1rem;
+    padding-bottom: 0;
+    /* color: hsl(12, 90%, 52%); */
+    color: var(--secondary-text-color);
 }

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATIE LIN</title>
+    <style>
+        :root {
+            --accent-color: #9999FF;
+            /* --back-color: #FF5733; */
+            /* --text-color: rgb(27, 27, 27); */
+            --back-color: rgb(30, 30, 30);
+            --text-color: rgb(212, 212, 212);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+        }
+
+        body {
+            background-color: var(--back-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        main {
+            margin: 0 auto;
+            padding: 40px 120px 0 120px;
+            max-width: 600px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 1.4em;
+            font-stretch: 125%;
+            font-weight: 800;
+            display: inline;
+            margin-right: 5px;
+        }
+
+        a[href="index.html"] {
+            text-decoration: none;
+            
+        }
+
+        a[href="index.html"]:hover, a[href="index.html"]:focus {
+            color: var(--back-color);
+            background-color: var(--accent-color);
+            font-stretch: 150%;
+        }
+
+        h2 {
+            font-weight: 600;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        sup {
+            font-size: 0.75em;
+        }
+
+        footer {
+            text-align: right;
+            margin-top: 80px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5em;
+            margin-top: 20px;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:hover, a:focus {
+            color: var(--back-color);
+            background-color: var(--text-color);
+        }
+
+        ol {
+            counter-reset: item;
+        }
+
+        ol>li {
+            counter-increment: item;
+            list-style: none inside;
+            margin: 20px 0;
+            overflow: hidden;
+            line-height: 1.5em;
+        }
+
+        ol>li:before {
+            content: counter(item);
+            margin-right: 10px;
+            padding: 8px;
+            border-radius: 50%;
+            width: 25px;
+            background: var(--text-color);
+            color: var(--back-color);
+            text-align: center;
+            float: left;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                max-width: 600px;
+                padding: 16px;
+                /* background-color: var(--text-color);
+                color: var(--back-color); */
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<main>
+    <h1 id="home"><a href="index.html">KATIE LIN</a></h1>
+    
+    <h2>Hi, I'm Katie</h2>
+    <p>I'm a software engineer and UX prototyper.</p>
+    <p>I was born and raised in San Diego, CA. Over the past five years, I've split my time between San Diego and Pittsburgh, PA. 
+        I just graduated from Carnegie Mellon University with a Bachelor's of Science in Information Systems.</p>
+    <p>Right now, I'm enjoying some time off after graduating and figuring out what's next.</p>
+    <p>The website you're viewing now is a "shitty first draft"<sup><a id="footnote-1" href="#1">1</a></sup>.
+    </p>
+    <p>If you know me irl, you probably know that I like puzzles <!--**-->. A lot. 
+        In fact, I think my lifelong love for puzzles and games, particularly ones that involve grids, is what somehow led me to software engineering. 
+        My first job in The Tech Industry&#8482; was a formative experience that allowed me to dive in and design features and interfaces that would eventually get shipped to thousands of users.
+    </p>
+    <p>I'm not the best at keeping a crossword streak--the longest one I've held is 40 days. Time and time zones are weird, and sometimes it's the next day and I won't even realize it.
+        I do, however, like to speed solve, and I've also amassed a decent amount of physical newspaper puzzles that were a core part of my daily routine in college.
+    </p>
+
+    <!-- ** add flourish similar to https://spencer.place/about/ here -->
+
+    <h2>Things to add in the future</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#nesting_lists -->
+    <ul>
+        <li>slashpages
+            <ul>
+                <li>/now</li>
+                <li>/blogroll</li>
+                <li>/feed(s)
+                    <ul>
+                        <li>RSS</li>
+                        <li>Atom</li>
+                        <li>JSON</li>
+                    </ul>
+                </li>
+                <li>/changelog</li>
+                <li>/carry -- edc</li>
+                <li>/chipotle -- https://slashpages.net/</li>
+                <li>/sitemap</li>
+            </ul>
+        </li>
+        <li>webmentions
+            <ul>
+                <li>guestbook</li>
+            </ul>
+        </li>
+        <li>personal canon</li>
+        <li><em>colophon</em></li>
+        <li><i>gomakethings</i>
+            <ul><li>toolkit</li>
+            <li>reference guide</li></ul>
+        </li>
+        <li>failure resume</li>
+    </ul>
+    
+    
+    <div style="border: 1px solid #333; margin-top: 5rem; padding: 1.5rem">
+        <!-- Gemma Copeland - Are.na embed -->
+        <h3 style="margin: 0; font-weight: bold">Also in this series</h3>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/struggle_for_each_paper/">Behind the scenes: the struggle for each paper</a> to get published
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/illustrative-notes-for-publishing-aesthetics/">Illustrative notes for obsessing over publishing aesthetics</a>
+        </p>
+        <h3 style="padding-top: 1rem; margin: 0; font-weight: bold">Other articles I've written</h3>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/productivity_text_file/">My productivity app is a never-ending .txt file</a
+                ></p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/covid_sleep/">The Coronavirus pandemic has changed our sleep</a> behavior
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/extracting_data_from_tracking_devices/">Extracting data from tracking devices</a> by going to the cloud
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/computer-science-open-data/#cs-faculty-composition-and-hiring-trends">CS Faculty Composition and Hiring Trends</a>
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/computer-science-open-data/#bias-in-computer-science-rankings">Bias in Computer Science Rankings</a>
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/computer-science-open-data/#who-wins-cs-best-paper-awards">Who Wins CS Best Paper Awards</a>?
+        </p>
+        <p style="padding-top: 0.5rem; margin: 0">
+            <a href="/computer-science-open-data/#verified-computer-science-phd-stipends">Verified Computer Science Ph.D. Stipends</a>
+        </p>
+    </div>
+    <br>
+    <p class="footnotes">
+        <sup><a id="1" href="#footnote-1">1</a></sup> "Almost all good writing begins with terrible first efforts" — Anne Lamott, <i>Bird by Bird</i>
+    </p>
+    
+    <footer>This page is <a href="http://jeffhuang.com/designed_to_last/">designed to last</a>.</footer>
+    </main>    
+</body>
+</html>

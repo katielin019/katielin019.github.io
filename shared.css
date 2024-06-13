@@ -60,17 +60,26 @@ main > p {
     margin-top: 20px;
 }
 
+sup {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+sup > a {
+    text-decoration: none;
+}
+
 footer {
     position: fixed;
     height: 4rem;
     bottom: 0;
 }
 
-span {
+/* span {
     color: var(--accent-color);
-}
+} */
 
-span:hover {
+/* span:hover {
     color: var(--bg-color);
     background-color: var(--accent-color);
-}
+} */

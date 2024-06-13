@@ -75,6 +75,33 @@ footer {
     bottom: 0;
 }
 
+#custom-header {
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+#custom-header > .css-toggle-content {
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+#custom-header > label:hover {
+    text-decoration: underline;
+}
+
+#custom-header > label {
+    color: var(--accent-color);
+}
+
+.css-toggle-switch {
+    display: none;
+}
+
+.css-toggle-switch:checked ~ .css-toggle-content {
+    display: none;
+}
+
 /* span {
     color: var(--accent-color);
 } */

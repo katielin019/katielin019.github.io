@@ -1,5 +1,7 @@
+@charset "UTF-8";
+
 :root {
-    --accent-color: hsl(12, 90%, 52%);
+    --accent-color: hsl(12, 96%, 50%);
     --text-color: rgb(212, 212, 212);
     --bg-color: rgb(1, 9, 1);
     --secondary-text-color: rgb(181, 219, 255);
@@ -28,12 +30,12 @@ h1 {
 }
 
 a {
-    color: inherit;
+    color: var(--secondary-text-color);
 }
 
 a:hover, a:focus {
     color: var(--bg-color);
-    background-color: var(--text-color);
+    background-color: var(--secondary-text-color);
 }
 
 a[href="index.html"] {
@@ -51,8 +53,4 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: var(--secondary-text-color);
-}
-
-footer a {
-    color: var(--text-color);
 }

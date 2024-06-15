@@ -85,3 +85,22 @@ footer {
 	font-size: 0.9rem;
 	color: var(--secondary-text-color);
 }
+
+@media screen and (max-width: 900px) {
+	body {
+		padding: 20px 60px 0 60px;
+		max-width: 100%;
+	}
+	
+	header {
+		display: block;
+	}
+	
+	.head.rect {
+		width: 100%;
+	}
+	
+	.rect {
+		width: 100%;
+	}
+}

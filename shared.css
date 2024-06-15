@@ -20,13 +20,16 @@ header {
 	width: 100%;
 }
 
+main {
+	margin: 0 auto;
+	padding: 40px;
+	max-width: 1400px;
+}
+
 body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	background-color: var(--bg-color);
 	color: var(--text-color);
-	margin: 0 auto;
-	padding: 40px 120px 0 120px;
-	max-width: 800px;
 }
 
 h1 {
@@ -36,6 +39,15 @@ h1 {
 /*    display: inline;*/
 /*    margin-right: 5px;*/
 }
+
+header > div {
+	color: var(--secondary-text-color);
+}
+
+/*header > div > a:hover, header > div > a:focus {
+	color: var(--bg-color);
+	background-color: var(--secondary-text-color);
+}*/
 
 .head.rect {
 	font-size: 1.8rem;
@@ -81,12 +93,13 @@ a[href$=".html"]:hover, a[href$=".html"]:focus {
 footer {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
+/*	margin-top: 20px;*/
+	padding: 24px;
 	font-size: 0.9rem;
 	color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
 	body {
 		padding: 20px 60px 0 60px;
 		max-width: 100%;

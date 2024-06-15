@@ -4,12 +4,19 @@
     --accent-color: hsl(12, 96%, 50%);
     --text-color: rgb(212, 212, 212);
     --bg-color: rgb(1, 9, 1);
-    --secondary-text-color: rgb(181, 219, 255);
+    --secondary-text-color: rgb(168, 213, 255);
 }
 
 * {
     padding: 0;
     margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 body {

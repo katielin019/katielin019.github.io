@@ -40,10 +40,6 @@ h1 {
 /*    margin-right: 5px;*/
 }
 
-header > div {
-	color: var(--secondary-text-color);
-}
-
 /*header > div > a:hover, header > div > a:focus {
 	color: var(--bg-color);
 	background-color: var(--secondary-text-color);
@@ -53,6 +49,8 @@ header > div {
 	font-size: 1.8rem;
 	font-stretch: 125%;
 	font-weight: 800;
+	text-align: left;
+	padding-left: 10px;
 	width: 40%;
 }
 
@@ -61,7 +59,7 @@ header > div {
 	line-height: 1.8rem;
 	font-weight: 400;
 	width: 20%;
-	border: 2px solid white;
+/*	border: 2px solid gray;*/
 	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -87,7 +85,8 @@ a[href="index.html"] {
 
 a[href$=".html"]:hover, a[href$=".html"]:focus {
 	color: var(--bg-color);
-	background-color: var(--accent-color);
+/*	background-color: var(--accent-color);*/
+	background-color: gray;
 }
 
 footer {
@@ -100,8 +99,12 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+	body, header, footer, main {
+		padding: 12px;
+	}
+	
 	body {
-		padding: 20px 60px 0 60px;
+/*		padding: 20px 60px 0 60px;*/
 		max-width: 100%;
 	}
 	
@@ -115,5 +118,10 @@ footer {
 	
 	.rect {
 		width: 100%;
+	}
+	
+	footer {
+		display: block;
+		padding: 4px;
 	}
 }

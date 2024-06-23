@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
 :root {
-	--accent-color: hsl(12, 96%, 50%);
-	--text-color: rgb(212, 212, 212);
-	--bg-color: rgb(1, 9, 1);
-	--secondary-text-color: rgb(168, 213, 255);
+	/* --accent-color: hsl(12, 96%, 50%); */
+	--accent-color: rgb(228, 91, 6);
+	--text-color: rgb(240, 240, 240);
+	/* --bg-color: rgb(1, 9, 1); */
+	--bg-color: rgb(40, 28, 28);
+	--secondary-text-color: rgb(195, 195, 195);
+	/* --secondary-text-color: rgb(168, 213, 255); */
 }
 
 * {
@@ -13,11 +16,7 @@
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 12px;
-	width: 100%;
+	padding: 36px;
 }
 
 main {
@@ -45,51 +44,38 @@ h2 {
 	padding-bottom: 0.8rem;
 }
 
-.head.rect {
-	font-size: 1.8rem;
-	font-stretch: 125%;
-	font-weight: 800;
-	text-align: left;
-	padding-left: 12px;
-	width: 40%;
-}
-
-.rect {
-	font-size: 1.2rem;
-	line-height: 1.8rem;
-	font-weight: 400;
-	width: 20%;
-/*	border: 2px solid gray;*/
-	text-align: center;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+p {
+	color: var(--secondary-text-color);
 }
 
 a {
-	color: var(--secondary-text-color);
+	color: var(--accent-color);
 }
 
 a:hover, a:focus {
 	color: var(--bg-color);
-	background-color: var(--secondary-text-color);
+	background-color: var(--accent-color);
 }
 
 a[href="index.html"] {
 	text-decoration: none;
 }
 
-a[href$=".html"]:hover, a[href$=".html"]:focus {
+/* a[href$=".html"]:hover, a[href$=".html"]:focus {
 	color: var(--bg-color);
-	background-color: var(--secondary-text-color);
-}
+	background-color: var(--accent-color);
+} */
 
 footer {
 	display: flex;
 	justify-content: space-between;
 /*	margin-top: 20px;*/
-	padding: 24px;
+	padding: 36px;
+}
+
+footer p {
 	font-size: 1rem;
-	color: var(--secondary-text-color);
+	color: var(--text-color);
 }
 
 @media screen and (max-width: 720px) {
@@ -100,15 +86,23 @@ footer {
 	p {
 		font-size: 1.1rem;
 	}
+
+	header {
+		padding: 12px;
+	}
 	
 	main {
 		padding: 12px;
 	}
 	
 	footer {
-		font-size: 0.9rem;
 		display: block;
 		padding: 12px;
+	}
+
+	footer p {
+		font-size: 0.9rem;
+		color: var(--text-color);
 	}
 }
 

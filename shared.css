@@ -16,12 +16,12 @@
 }
 
 header {
-	padding: 36px;
+	padding: 24px;
 }
 
 main {
 /*	margin: 0 auto;*/
-	padding: 36px;
+	padding: 24px;
 	max-width: 1400px;
 }
 
@@ -33,13 +33,13 @@ body {
 }
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-stretch: 125%;
 	font-weight: 800;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 600;
 	padding-bottom: 0.8rem;
 }
@@ -61,24 +61,23 @@ a[href="index.html"] {
 	text-decoration: none;
 }
 
-/* a[href$=".html"]:hover, a[href$=".html"]:focus {
-	color: var(--bg-color);
-	background-color: var(--accent-color);
-} */
-
 footer {
 	display: flex;
 	justify-content: space-between;
 /*	margin-top: 20px;*/
-	padding: 36px;
+	padding: 24px;
 }
 
 footer p {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: var(--text-color);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 1.4rem;
+	}
+
 	h2 {
 		font-size: 1.6rem;
 	}
@@ -88,20 +87,21 @@ footer p {
 	}
 
 	header {
-		padding: 12px;
+		padding: 16px;
 	}
 	
 	main {
-		padding: 12px;
+		padding: 16px;
 	}
 	
 	footer {
 		display: block;
-		padding: 12px;
+		padding: 16px;
 	}
 
 	footer p {
 		font-size: 0.9rem;
+		/* padding-bottom: 4px; */
 		color: var(--text-color);
 	}
 }

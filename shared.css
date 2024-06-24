@@ -2,11 +2,14 @@
 
 :root {
 	/* --accent-color: hsl(12, 96%, 50%); */
-	--accent-color: rgb(228, 91, 6);
-	--text-color: rgb(240, 240, 240);
+	--accent-color: rgb(255, 98, 0);
+	/* --text-color: rgb(240, 240, 240); */
+	--text-color: rgb(0, 0, 0);
 	/* --bg-color: rgb(1, 9, 1); */
-	--bg-color: rgb(40, 28, 28);
-	--secondary-text-color: rgb(195, 195, 195);
+	/* --bg-color: rgb(40, 28, 28); */
+	--bg-color: white;
+	/* --secondary-text-color: rgb(195, 195, 195); */
+	--secondary-text-color: rgb(132, 132, 132);
 	/* --secondary-text-color: rgb(168, 213, 255); */
 }
 
@@ -70,6 +73,7 @@ footer {
 
 footer p {
 	font-size: 0.9rem;
+	font-weight: 500;
 	color: var(--text-color);
 }
 

@@ -11,8 +11,6 @@
 	/* --secondary-text-color: rgb(195, 195, 195); */
 	--secondary-text-color: rgb(132, 132, 132);
 	/* --secondary-text-color: rgb(168, 213, 255); */
-	--carnegie-red: rgb(196, 18, 48);
-	--gold-thread: rgb(253, 181, 21);
 }
 
 * {
@@ -72,11 +70,6 @@ p {
 	color: transparent;
 } */
 
-.cmu:hover, .cmu:focus {
-	color: var(--carnegie-red);
-	background-color: var(--gold-thread);
-}
-
 a {
 	color: var(--accent-color);
 }
@@ -102,6 +95,37 @@ sup > a {
 .content {
 	padding-bottom: 2rem;
 }
+
+.cap-emoji-wrapper {
+	text-align: center;
+}
+
+.cap-emoji {
+	font-size: 1.5rem;
+	display: inline-block;
+	visibility: hidden;
+}
+
+.trigger:hover + .cap-emoji-wrapper > .cap-emoji {
+	visibility: visible;
+	animation: throwCap 1.5s ease-in-out infinite;
+	animation-iteration-count: 1;
+}
+
+@keyframes throwCap {
+	0%, 100% {
+	  transform: translateY(0) rotate(0deg);
+	}
+	25% {
+	  transform: translateY(-100px) rotate(360deg);
+	}
+	50% {
+	  transform: translateY(-50px) rotate(720deg);
+	}
+	75% {
+	  transform: translateY(-100px) rotate(1080deg);
+	}
+  }
 
 .footnotes {
 	border-top: 2px solid var(--secondary-text-color);

@@ -56,6 +56,10 @@ h3 {
 	/* padding-bottom: 0.4rem; */
 }
 
+.banner {
+	visibility: hidden;
+}
+
 .important {
 	color: var(--text-color);
 }
@@ -264,6 +268,11 @@ footer p {
 	
 	sup > a {
 		text-decoration: none;
+	}
+	
+	.banner {
+		visibility: visible;
+		padding-bottom: 1rem;
 	}
 	
 	.content {

@@ -86,6 +86,10 @@ a:hover, a:focus {
 	background-color: var(--accent-color);
 }
 
+a[href^="#"] {
+	text-decoration: none;
+}
+
 a[href$=".html"] {
 	text-decoration: none;
 }
@@ -119,10 +123,10 @@ sup > a {
 .cap-emoji {
 	font-size: 1.5rem;
 	display: inline-block;
-	visibility: hidden;
-	position: absolute;
+	/* visibility: hidden; */
+	/* position: absolute;
 	left: 0;
-	top: 0;
+	top: 0; */
 	white-space: nowrap;
 }
 
@@ -151,8 +155,8 @@ sup > a {
 	width: 100%;
 	/* display: flex;
 	flex-wrap: wrap; */
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	/* padding-left: 1.5rem;
+	padding-right: 1.5rem; */
 	column-count: 2;
 	gap: 1rem;
 	margin-bottom: 1rem;
@@ -184,36 +188,9 @@ sup > a {
 	margin-bottom: 1rem;
 }
 
-.trigger p {
+/* .trigger p {
 	padding-left: 2rem;
-}
-
-.wave-emoji {
-	font-size: 1.5rem;
-	display: inline-block;
-	visibility: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;
-	white-space: nowrap;
-}
-
-.trigger:hover .wave-emoji {
-	visibility: visible;
-	animation: waveHand 1.4s ease-in-out infinite;
-	animation-iteration-count: 1;
-}
-
-@keyframes waveHand {
-	0% { transform: rotate( 0.0deg) }
-	10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-	20% { transform: rotate(-8.0deg) }
-	30% { transform: rotate(14.0deg) }
-	40% { transform: rotate(-4.0deg) }
-	50% { transform: rotate(10.0deg) }
-	60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-   100% { transform: rotate( 0.0deg) }
- }
+} */
 
 /* .elsewhere {
 	width: 35%;

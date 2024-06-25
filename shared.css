@@ -41,18 +41,27 @@ h1 {
 	font-weight: 800;
 }
 
-h2 {
+/* h2 {
 	font-size: 1.8rem;
 	font-weight: 600;
 	padding-bottom: 0.8rem;
+} */
+
+h3 {
+	font-size: 1.35rem;
+	font-weight: 600;
+}
+
+.important {
+	color: var(--text-color);
 }
 
 p {
 	color: var(--secondary-text-color);
 }
 
-.important {
-	color: var(--text-color);
+br {
+	line-height: 200%;
 }
 
 .headline {
@@ -72,7 +81,7 @@ a:hover, a:focus {
 	background-color: var(--accent-color);
 }
 
-a[href="index.html"] {
+a[href$=".html"] {
 	text-decoration: none;
 }
 
@@ -83,6 +92,10 @@ sup {
 
 sup > a {
 	text-decoration: none;
+}
+
+.container {
+	padding-bottom: 4rem;
 }
 
 .content {
@@ -126,7 +139,56 @@ sup > a {
 	75% {
 	  transform: translateY(-100px) rotate(1080deg);
 	}
-  }
+}
+
+.extras {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.box {
+	border: 1px solid #333;
+	margin-top: 5rem 0;
+	padding: 1.5rem;
+}
+
+.box ul {
+	/* list-style-type: none; */
+	margin-left: 1rem;
+}
+
+.box li {
+	padding-top: 0.5rem;
+	font-size: 1.1rem;
+}
+
+.now {
+	width: 45%;
+	float: left;
+	margin-bottom: 1rem;
+	/* margin-right: 1rem; */
+}
+
+.elsewhere {
+	width: 35%;
+}
+
+/* .links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.links a {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	border: 1px solid var(--secondary-text-color);
+} */
 
 .footnotes {
 	border-top: 2px solid var(--secondary-text-color);

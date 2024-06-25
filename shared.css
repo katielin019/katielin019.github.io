@@ -70,6 +70,7 @@ br {
 
 .headline {
 	font-weight: 700;
+	/* margin-left: 2rem; */
 }
 
 .headline:hover, .headline:focus {
@@ -174,7 +175,7 @@ sup > a {
 	list-style-type: none;
 }
 
-.box li {
+.box li, .box p {
 	padding-top: 0.5rem;
 	font-size: 0.9rem;
 }

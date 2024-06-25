@@ -38,6 +38,7 @@ h3 {
 
 .banner, .banner-text {
 	visibility: hidden;
+	display: none;
 }
 
 .important {
@@ -89,6 +90,10 @@ sup > a {
 
 .content {
 	padding-bottom: 2rem;
+}
+
+.header {
+	font-weight: 500;
 }
 
 .trigger {
@@ -216,7 +221,7 @@ footer p {
 
 	.banner-text {
 		visibility: visible;
-		animation: marquee 8s linear infinite;
+		animation: marquee 10s linear infinite;
 		display: inline-block;
 		white-space: nowrap;
 		padding: 0px 20px 0px 20px ;
@@ -230,7 +235,6 @@ footer p {
 
 	@keyframes marquee {
 		from {
-			/* margin-left: 100%; */
 			transform: translateX(0%);
 		}
 		to {

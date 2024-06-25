@@ -9,7 +9,7 @@
 	/* --bg-color: rgb(40, 28, 28); */
 	--bg-color: white;
 	/* --secondary-text-color: rgb(195, 195, 195); */
-	--secondary-text-color: rgb(132, 132, 132);
+	--secondary-text-color: rgb(155, 155, 155);
 	/* --secondary-text-color: rgb(168, 213, 255); */
 }
 
@@ -58,6 +58,11 @@ h3 {
 
 .banner {
 	visibility: hidden;
+}
+
+.banner-text {
+	visibility: hidden;
+	display: none;
 }
 
 .important {
@@ -276,11 +281,12 @@ footer p {
 		overflow: hidden;
 		white-space: nowrap;
 		padding: 5px;
-		margin-bottom: 1rem;
+		margin-bottom: 0.75rem;
 		background-color: var(--accent-color);
 	}
 
 	.banner-text {
+		visibility: visible;
 		animation: marquee 8s linear infinite;
 		display: inline-block;
 		white-space: nowrap;

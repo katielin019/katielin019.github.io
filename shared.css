@@ -50,8 +50,10 @@ h1 {
 } */
 
 h3 {
-	font-size: 1.35rem;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 800;
+	/* text-decoration: underline; */
+	/* padding-bottom: 0.4rem; */
 }
 
 .important {
@@ -118,7 +120,7 @@ sup > a {
 	display: inline-block;
 	visibility: hidden;
 	position: absolute;
-	right: 0;
+	left: 0;
 	top: 0;
 	white-space: nowrap;
 }
@@ -148,35 +150,69 @@ sup > a {
 	width: 100%;
 	/* display: flex;
 	flex-wrap: wrap; */
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	column-count: 2;
 	gap: 1rem;
+	margin-bottom: 1rem;
 }
 
 .box {
 	column-count: 1;
-	border: 1px solid #333;
-	margin-top: 5rem 0;
+	border: 1.5px solid var(--text-color);
+	margin: 0;
+	/* margin-top: 5rem 0; */
 	padding: 1.5rem;
 }
 
-.box ul {
+.now ul {
 	/* list-style-type: none; */
 	margin-left: 1rem;
 }
 
-.box li {
-	padding-top: 0.3rem;
-	font-size: 1.1rem;
+.elsewhere ul {
+	list-style-type: none;
 }
 
-.now {
-	/* width: 45%; */
-	/* float: left; */
-	margin-bottom: 1rem;
-	/* margin-right: 1rem; */
+.box li {
+	padding-top: 0.5rem;
+	font-size: 0.9rem;
 }
+
+.now, .colophon {
+	margin-bottom: 1rem;
+}
+
+.trigger p {
+	padding-left: 2rem;
+}
+
+.wave-emoji {
+	font-size: 1.5rem;
+	display: inline-block;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	white-space: nowrap;
+}
+
+.trigger:hover .wave-emoji {
+	visibility: visible;
+	animation: waveHand 1.4s ease-in-out infinite;
+	animation-iteration-count: 1;
+}
+
+@keyframes waveHand {
+	0% { transform: rotate( 0.0deg) }
+	10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+	20% { transform: rotate(-8.0deg) }
+	30% { transform: rotate(14.0deg) }
+	40% { transform: rotate(-4.0deg) }
+	50% { transform: rotate(10.0deg) }
+	60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   100% { transform: rotate( 0.0deg) }
+ }
 
 /* .elsewhere {
 	width: 35%;
@@ -221,7 +257,7 @@ footer p {
 	color: var(--text-color);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
 	h1 {
 		font-size: 1.4rem;
 	}

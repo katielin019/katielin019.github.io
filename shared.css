@@ -272,7 +272,35 @@ footer p {
 	
 	.banner {
 		visibility: visible;
-		padding-bottom: 1rem;
+		display: flex;
+		overflow: hidden;
+		white-space: nowrap;
+		padding: 5px;
+		margin-bottom: 1rem;
+		background-color: var(--accent-color);
+	}
+
+	.banner-text {
+		animation: marquee 8s linear infinite;
+		display: inline-block;
+		white-space: nowrap;
+		padding: 0px 20px 0px 20px ;
+		font-weight: 600;
+		color: var(--bg-color);
+	}
+
+	.banner:hover .banner-text {
+		animation-play-state: paused;
+	}
+
+	@keyframes marquee {
+		from {
+			/* margin-left: 100%; */
+			transform: translateX(0%);
+		}
+		to {
+			transform: translateX(-100%);
+		}
 	}
 	
 	.content {

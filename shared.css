@@ -173,6 +173,7 @@ sup > a {
 .now ul {
 	/* list-style-type: none; */
 	margin-left: 1rem;
+	color: var(--secondary-text-color);
 }
 
 .elsewhere ul {

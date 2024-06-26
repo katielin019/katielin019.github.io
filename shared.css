@@ -175,6 +175,14 @@ section {
 	margin-bottom: 1rem;
 }
 
+.orange-text {
+	color: var(--accent-color);
+}
+
+.bold {
+	font-weight: 600;
+}
+
 .work {
 	width: 100%;
 	column-count: 3;
@@ -185,6 +193,7 @@ section {
 .work img {
 	padding: 1rem;
 	border: 1.5px solid var(--text-color);
+	margin-bottom: 1rem;
 }
 
 .work a:hover, .work a:focus {
@@ -304,12 +313,4 @@ footer p {
 		padding-bottom: 2px;
 		color: var(--text-color);
 	}
-}
-
-.orange-text {
-	color: var(--accent-color);
-}
-
-.bold {
-	font-weight: 600;
 }

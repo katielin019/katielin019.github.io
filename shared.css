@@ -275,9 +275,15 @@ footer p {
 		padding-bottom: 2rem;
 	}
 
-	.extras {
+	.boxes, .work {
 		width: 100%;
 		column-count: 1;
+	}
+
+	.work img {
+		width: 100%;
+		padding: 1rem;
+		border: 1.5px solid var(--text-color);
 	}
 
 	.footnotes {

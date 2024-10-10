@@ -16,13 +16,13 @@
 }
 
 header {
-	padding: 24px;
+	padding: 16px;
 }
 
 main {
 	/* margin: 0 auto;*/
-	padding: 24px;
-	max-width: 1400px;
+	padding: 16px;
+	max-width: 600px;
 }
 
 body {
@@ -63,74 +63,14 @@ a[href="index.html"] {
 }
 
 footer {
-	display: flex;
-	justify-content: space-between;
-	/* margin-top: 20px;*/
+	position: fixed;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	padding: 24px;
 }
 
 footer p {
 	font-size: 0.9rem;
+
 	color: var(--text-color);
 }
-
-@media screen and (max-width: 640px) {
-	h1 {
-		font-size: 1.4rem;
-	}
-
-	h2 {
-		font-size: 1.6rem;
-	}
-
-	p {
-		font-size: 1.1rem;
-	}
-
-	header {
-		padding: 16px;
-	}
-
-	main {
-		padding: 16px;
-	}
-
-	footer {
-		display: block;
-		padding: 16px;
-	}
-
-	footer p {
-		font-size: 0.9rem;
-		/* padding-bottom: 4px; */
-		color: var(--text-color);
-	}
-}
-
-/*@media screen and (max-width: 720px) {
- body, header, footer, main {
-  padding: 0.2rem;
- }
-
- body {
-  padding: 20px 60px 0 60px;
-  max-width: 100%;
- }
-
- header {
-  display: block;
- }
-
- .head.rect {
-  width: 100%;
- }
-
- .rect {
-  width: 100%;
- }
-
- footer {
-  display: block;
-  padding: 4px;
- }
-}*/

@@ -41,12 +41,13 @@ h1 {
 
 h2 {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 500;
 	padding-bottom: 0.8rem;
 }
 
 p {
 	color: var(--secondary-text-color);
+	padding-bottom: 24px;
 }
 
 a {

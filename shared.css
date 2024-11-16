@@ -97,15 +97,25 @@ sup {
 	font-size: 0.75rem;
 }
 
+figure {
+	padding-bottom: 1.5rem;
+	width: 350px;
+}
+
+figure > img {
+	width: 350px;
+}
+
+figcaption {
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
 .footnotes {
 	border-top: 1px solid #000;
 	padding-top: 1rem;
 	color: var(--text-color);
-	font-size: 0.85rem;
-}
-
-.footnotes > sup {
-	font-size: 0.5rem;
+	font-size: 0.9rem;
 }
 
 .fn {

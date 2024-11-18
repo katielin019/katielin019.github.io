@@ -37,6 +37,15 @@ header {
 	margin: 16px;
 }
 
+.about {
+	color: rgb(79, 79, 79);
+}
+
+.role {
+	display: inline-block;
+	color: black;
+}
+
 main {
 	/* margin: 0 auto; */
 	padding: 16px;

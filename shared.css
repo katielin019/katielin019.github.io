@@ -1,13 +1,10 @@
 @charset "UTF-8";
 
 :root {
-	/* --accent-color: hsl(12, 96%, 50%); */
-	--accent-color: #ff6200;
+	--accent-color: hsl(12, 96%, 50%);
+	/* --accent-color: #ff6200; */
 	--text-color: #000000;
-	/* --bg-color: rgb(1, 9, 1); */
 	--bg-color: rgb(232, 232, 232);
-	--secondary-text-color: rgb(0, 0, 0);
-	/* --secondary-text-color: rgb(168, 213, 255); */
 }
 
 * {
@@ -28,40 +25,33 @@ body {
 	justify-content: space-between;
 }
 
-.nav.container > h3 {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
-
 header {
 	margin: 16px;
+	font-size: 1.15rem;
+	padding-bottom: 4rem;
 }
 
-.about {
-	color: rgb(79, 79, 79);
-}
-
-.role {
-	display: inline-block;
-	color: black;
+header .name {
+	font-size: 1.4rem;
+	font-stretch: 125%;
+	font-weight: 800;
+	padding-right: 4px;
 }
 
 main {
-	/* margin: 0 auto; */
 	padding: 16px;
-	/* margin: 16px; */
-	max-width: 600px;
+	/* max-width: 600px; */
 }
 
 ul {
 	padding-left: 2rem;
 }
 
-h1 {
+/* h1 {
 	font-size: 1.6rem;
 	font-stretch: 125%;
 	font-weight: 800;
-}
+} */
 
 h2 {
 	font-size: 1.8rem;
@@ -74,8 +64,9 @@ h3 {
 }
 
 p {
-	color: var(--secondary-text-color);
+	color: var(--text-color);
 	padding-bottom: 24px;
+	font-size: 1.25rem;
 }
 
 code {
@@ -144,6 +135,5 @@ footer {
 footer p {
 	font-size: 0.95rem;
 	padding-bottom: 4px;
-	/* font-size: 0.9rem; */
 	color: var(--text-color);
 }

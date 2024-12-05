@@ -135,5 +135,5 @@ footer {
 footer p {
 	font-size: 0.95rem;
 	padding-bottom: 4px;
-	color: var(--text-color);
+	color: gray;
 }

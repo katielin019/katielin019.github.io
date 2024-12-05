@@ -121,6 +121,11 @@ figcaption {
 	color: var(--text-color);
 }
 
+.x {
+	color: darkgreen;
+	font-weight: 500;
+}
+
 .fn:hover, .fn:focus {
 	color: var(--bg-color);
 	background-color: var(--text-color);

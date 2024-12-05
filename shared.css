@@ -37,9 +37,14 @@ header .name {
 	padding-right: 4px;
 }
 
-main, footer {
-	padding: 16px;
+main {
+	padding-left: 10rem;
+	padding-right: 10rem;
 }
+
+/* main, footer {
+	padding: 16px;
+} */
 
 ul {
 	padding-left: 2rem;

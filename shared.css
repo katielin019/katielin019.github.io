@@ -92,52 +92,7 @@ a[href^="#"] {
 	text-decoration: none;
 }
 
-sup {
-	font-size: 0.75rem;
-}
-
-figure {
-	padding-bottom: 1.5rem;
-	width: 350px;
-}
-
-figure > img {
-	width: 350px;
-}
-
-figcaption {
-	font-size: 0.9rem;
-	font-weight: 400;
-}
-
-.footnotes {
-	border-top: 1px solid #000;
-	padding-top: 1rem;
-	color: var(--text-color);
-	font-size: 0.9rem;
-}
-
-.fn {
-	color: var(--text-color);
-}
-
 .x {
 	color: darkgreen;
 	font-weight: 500;
-}
-
-.fn:hover, .fn:focus {
-	color: var(--bg-color);
-	background-color: var(--text-color);
-}
-
-footer {
-	position: fixed;
-	margin: 16px;
-}
-
-footer p {
-	font-size: 12px;
-	padding-bottom: 4px;
-	color: var(--text-color);
 }

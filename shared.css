@@ -23,7 +23,6 @@ html, body {
 body {
 	margin: 0;
 	/* max-width: 780px; */
-	max-width: 600px;
 	display: flex;
 	flex-direction: column;
 }
@@ -51,20 +50,34 @@ main {
 	/* padding: 20px; */
 }
 
-main > section {
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.left {
+	max-width: 600px;
+}
+
+.right {
+	max-width: 600px;
+}
+
+section {
 	line-height: 150%;
 }
 
-main > section > mark {
+section > mark {
 	/* display: none; */
 	background-color: white;
 }
 
-main > section > mark:hover {
+section > mark:hover {
 	background-color: var(--bg-color);
 }
 
-main > .break {
+.break {
 	height: 20px;
 }
 

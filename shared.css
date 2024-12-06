@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-	--accent-color: hsl(12, 96%, 50%);
+	--accent-color: hsl(146, 100%, 20%);
 	--text-color: #000000;
 	--bg-color: rgb(232, 232, 232);
 
@@ -26,6 +26,7 @@ body {
 
 header {
 	margin: 16px;
+	padding-bottom: 20px;
 }
 
 header > h1 {
@@ -45,11 +46,36 @@ main {
 	padding: 20px;
 }
 
+main > section {
+	/* padding-bottom: 20px; */
+	line-height: 140%;
+}
+
+main > section + section {
+	padding-top: 20px;
+}
+
+main > section:hover {
+	background: rgba(255, 230, 0, 0.5);
+	padding-bottom: 0px;
+	line-height: 140%;
+    /* padding: 3px 5px;
+    margin: -3px -5px;
+    line-height: 1.7; */
+    /* border-radius: 3px;
+    display:inline-block; */
+}
+
+span {
+	color: var(--accent-color);
+	font-weight: 500;
+}
+
 footer {
-	/* border-top: 2px solid var(--accent-color); */
-	border: 2px solid var(--accent-color);
 	flex-shrink: 0;
 	padding: 20px;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 footer > nav {
@@ -58,11 +84,6 @@ footer > nav {
 	justify-content: space-between;
 	/* justify-content: space-around; */
 	/* justify-content: space-evenly; */
-	
+
 	/* flex-direction: column; */
 }
-
-/* footer > nav > a {
-	margin-left: 8px;
-	margin-right: 8px;
-} */

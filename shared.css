@@ -54,14 +54,15 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 20%;
 }
 
-.left {
+/* .left {
 	max-width: 600px;
-}
+} */
 
 .right {
-	max-width: 600px;
+	max-width: 400px;
 }
 
 section {

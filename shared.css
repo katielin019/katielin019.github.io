@@ -47,23 +47,20 @@ main {
 }
 
 main > section {
-	/* padding-bottom: 20px; */
 	line-height: 140%;
 }
 
-main > section + section {
-	padding-top: 20px;
+main > section > mark {
+	/* display: none; */
+	background-color: var(--bg-color);
 }
 
-main > section:hover {
-	background: rgba(255, 230, 0, 0.5);
-	padding-bottom: 0px;
-	line-height: 140%;
-    /* padding: 3px 5px;
-    margin: -3px -5px;
-    line-height: 1.7; */
-    /* border-radius: 3px;
-    display:inline-block; */
+main > section > mark:hover {
+	background-color: yellow;
+}
+
+main > .break {
+	height: 20px;
 }
 
 span {

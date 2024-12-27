@@ -38,15 +38,15 @@ main {
 }
 
 .left {
-	width: calc(calc(100vw - 64px)*0.64);
+	width: calc(calc(100vw - 64px)*0.7);
 }
 
-.center {
+/* .center {
 	width: calc(calc(100vw - 64px)*0.08);
-}
+} */
 
 .right {
-	width: calc(calc(100vw - 64px)*0.28);
+	width: calc(calc(100vw - 64px)*0.3);
 	display: block;
 }
 

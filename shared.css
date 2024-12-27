@@ -136,15 +136,14 @@ input[type='radio']:before {
 } */
 
 .container {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: rgb(255, 217, 0);
-	background-color: rgba(53, 53, 53, 1);
+	/* color: rgb(255, 217, 0);
+	background-color: rgba(53, 53, 53, 1); */
 	display: inline-block;
 	width: 400px;
 	border: .5px solid rgba(199, 198, 196, .4);
-	border-top-left-radius: .3em;
-	border-top-right-radius: .3em;
-	border-bottom: none;
+	/* border-top-left-radius: .3em;
+	border-top-right-radius: .3em; */
+	/* border-bottom: none; */
 	overflow: hidden;
 }
 
@@ -161,12 +160,13 @@ input[type='radio'] {
 	justify-content: center;
 	align-items: center;
 	color: rgba(157, 157, 157, 1);
-	background-color: rgba(54, 54, 52, 1);
+	/* background-color: rgba(54, 54, 52, 1); */
 	padding: 3px 6px;
 
-	border: .5px solid transparent;
-	border-bottom: .5px solid rgba(255, 221, 2, .757);
-	border-bottom: .5px solid transparent;
+	border: .5px solid rgba(199, 198, 196, .4);
+	/* border: .5px solid transparent; */
+	/* border-bottom: .5px solid rgba(255, 221, 2, .757); */
+	/* border-bottom: .5px solid transparent; */
 	font-size: 14px;
 
 	position: relative;
@@ -187,12 +187,12 @@ input[type='radio']:before {
 
 /* active tab style */
 input[type='radio']:checked {
-	border: .5px solid rgba(255, 221, 2, .757);
+	/* border: .5px solid rgba(255, 221, 2, .757); */
 	border-bottom-color: transparent;
-	color: rgba(255, 217, 0, 1);
-	background-color: rgb(29 29 29);
-	border-top-left-radius: .3em;
-	border-top-right-radius: .3em;
+	/* color: rgba(255, 217, 0, 1); */
+	/* background-color: rgb(29 29 29); */
+	/* border-top-left-radius: .3em;
+	border-top-right-radius: .3em; */
 }
 
 /* applied to all contents containers */
@@ -200,8 +200,8 @@ input[type='radio']:checked {
 	height: 300px;
 	margin: -2px 0px 1px 0px;
 	/* top | right | bottom | left */
-	border: .5px solid rgba(255, 221, 2, .757);
-	background-color: rgb(29 29 29);
+	/* border: .5px solid rgba(255, 221, 2, .757); */
+	/* background-color: rgb(29 29 29); */
 	justify-content: center;
 	/* display = flex when visible */
 	align-items: center;

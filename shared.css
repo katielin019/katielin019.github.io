@@ -3,7 +3,7 @@
 :root {
 	--accent-color: hsl(20, 100%, 50%);
 	--text-color: #000000;
-	--bg-color: rgb(172, 172, 172);
+	--bg-color: rgba(172, 172, 172, 50%);
 
 	padding: 0;
 	margin: 0;
@@ -121,4 +121,14 @@ footer > nav {
 	/* justify-content: space-evenly; */
 
 	/* flex-direction: column; */
+}
+
+footer a {
+	color: blue;
+	background-color: white;
+}
+
+footer a:hover {
+	color: white;
+	background-color: blue;
 }

@@ -28,7 +28,9 @@ body {
 }
 
 header {
-	margin: 16px;
+	margin: 32px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 	/* padding-bottom: 20px; */
 }
 
@@ -52,7 +54,9 @@ header > p {
 
 main {
 	flex: 1 0 auto;
-	margin: 16px;
+	margin: 32px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 	/* padding: 20px; */
 }
 
@@ -104,13 +108,19 @@ span {
 	font-weight: 500;
 }
 
-/* span:hover {
-	color: var(--accent-color);
+/* .panel {
+	display: none;
 } */
+
+.panel #p1 {
+	display: block;
+}
 
 footer {
 	flex-shrink: 0;
-	padding: 20px;
+	padding: 40px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 /* @media (width >= 800px) {

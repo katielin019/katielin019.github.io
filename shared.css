@@ -83,13 +83,23 @@ section > mark {
 	height: 20px;
 }
 
+a {
+	color: black;
+	background-color: rgb(255, 255, 185);
+}
+
+a:hover {
+	color: black;
+	background-color: var(--bg-color);
+}
+
 span {
 	font-weight: 500;
 }
 
-span:hover {
+/* span:hover {
 	color: var(--accent-color);
-}
+} */
 
 footer {
 	flex-shrink: 0;

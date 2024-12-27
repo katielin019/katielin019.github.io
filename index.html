@@ -4,18 +4,32 @@
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
 	<link rel=stylesheet type=text/css href=shared.css>
+	<link rel=stylesheet type=text/css href=responsive.css>
 	<title>KATIE LIN</title>
+	<script>
+		(function() {
+			window.onresize = displayWindowSize;
+			window.onload = displayWindowSize;
+
+			function displayWindowSize() {
+				let myWidth = window.innerWidth;
+				let myHeight = window.innerHeight;
+				// your size calculation code here
+				document.getElementById("screen").innerHTML = myWidth + "x" + myHeight;
+			};
+		})();
+	</script>
 </head>
 <body>
+	<header>
+		<span id="name">KATIE LIN</span> is a software designer and engineer
+	</header>
 	<main>
 		<div class="left">
-			<header>
-				<span id="name">KATIE LIN</span> is a software designer and engineer
-			</header>
 			<div class="break"></div>
 			<div class="break"></div>
-			<div class="break"></div>
-			<div class="break"></div>
+			<div class="break" id="screen"></div>
+			<div class="break indicator"></div>
 			<section>
 				I recently graduated from <span>Carnegie Mellon University</span>, where I studied <span>information systems</span>.
 				While I was there, I <a href="https://github.com/ZahirSaiyed/HyprRun">made an iPhone app with some friends</a> using Spotify's <a href="https://developer.spotify.com/documentation/web-api">Web API</a> and <a href="https://developer.spotify.com/documentation/ios">iOS SDK</a>.
@@ -27,12 +41,18 @@
 				While the Quilt app is no longer available for download, you can read about it in press coverage from <a href="https://www.bustle.com/life/how-to-use-quilt-app">Bustle</a> or <a href="https://techcrunch.com/2021/02/10/quilt-an-audio-social-network-focused-on-self-care-raises-3-5-million-in-seed/">TechCrunch</a>.
 			</section>
 			<div class="break"></div>
+			<div class="container">
+				<input id="tab1" label="Custom Tab 1" type="radio" name="tab" checked>
+				<input id="tab2" label="Custom Tab 2" type="radio" name="tab">
+				<div id="content1" class="tab-content">Content for custom tab 1</div>
+				<div id="content2" class="tab-content">Content for custom tab 2</div>
+			</div>
 		</div>
 		<!-- <div class="center"></div> -->
 		<div class="right">
 			<div class="break"></div>
 			<div class="panel" id="p1">
-				<img src="assets/good-morning.jpg" width="270px">
+				<img src="assets/good-morning.jpg">
 			</div>
 		</div>
 	</main>

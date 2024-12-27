@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media (width < 900px) {
+	img {
+		width: 120px;
+	}
+
+	.indicator {
+		background-color: red;
+	}
+}
+
+@media (width >= 900px) {
+	img {
+		width: 230px;
+	}
+
+	.indicator {
+		background-color: yellow;
+	}
+}
+
+@media (width >= 1250px) {
+	img {
+		width: 270px;
+	}
+
+	.indicator {
+		background-color: green;
+	}
+}

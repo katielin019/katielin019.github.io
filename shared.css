@@ -88,7 +88,7 @@ section {
 	height: 20px;
 }
 
-.panel {
+.viz-content {
 	float: right;
 }
 
@@ -134,87 +134,3 @@ input[type='radio']:before {
 	display: inline-block;
 	text-align: center;
 } */
-
-.container {
-	/* color: rgb(255, 217, 0);
-	background-color: rgba(53, 53, 53, 1); */
-	display: inline-block;
-	width: 400px;
-	border: .5px solid rgba(199, 198, 196, .4);
-	/* border-top-left-radius: .3em;
-	border-top-right-radius: .3em; */
-	/* border-bottom: none; */
-	overflow: hidden;
-}
-
-/* default tab style */
-input[type='radio'] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	outline: none;
-
-	/* height: auto;
-	width: auto; */
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	color: rgba(157, 157, 157, 1);
-	/* background-color: rgba(54, 54, 52, 1); */
-	padding: 3px 6px;
-
-	border: .5px solid rgba(199, 198, 196, .4);
-	/* border: .5px solid transparent; */
-	/* border-bottom: .5px solid rgba(255, 221, 2, .757); */
-	/* border-bottom: .5px solid transparent; */
-	font-size: 14px;
-
-	position: relative;
-	top: -1.6px;
-	z-index: 2;
-	cursor: pointer;
-	margin: 0px;
-	margin-right: -4.5px;
-	margin-bottom: -1.8px;
-}
-
-/* tab text from label attribute */
-input[type='radio']:before {
-	content: attr(label);
-	display: inline-block;
-	text-align: center;
-}
-
-/* active tab style */
-input[type='radio']:checked {
-	/* border: .5px solid rgba(255, 221, 2, .757); */
-	border-bottom-color: transparent;
-	/* color: rgba(255, 217, 0, 1); */
-	/* background-color: rgb(29 29 29); */
-	/* border-top-left-radius: .3em;
-	border-top-right-radius: .3em; */
-}
-
-/* applied to all contents containers */
-.tab-content {
-	height: 300px;
-	margin: -2px 0px 1px 0px;
-	/* top | right | bottom | left */
-	/* border: .5px solid rgba(255, 221, 2, .757); */
-	/* background-color: rgb(29 29 29); */
-	justify-content: center;
-	/* display = flex when visible */
-	align-items: center;
-}
-
-/* rules for visible contents */
-#tab1:checked~#content1,
-#tab2:checked~#content2 {
-	display: flex;
-}
-
-/* rules for masked content */
-#tab1:checked~.tab-content:not(#content1),
-#tab2:checked~.tab-content:not(#content2) {
-	display: none;
-}

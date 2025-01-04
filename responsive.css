@@ -18,12 +18,12 @@
         background-color: orange;
     }
 
-    div.two-cols {
+    /* div.two-cols {
         display: grid;
-        gap: 5vw;
+        gap: 1.5em;
         max-width: 100%;
         grid-template-columns: minmax(300px, 500px) minmax(600px, 800px);
-    }
+    } */
 
     /* div.†wo-cols {
         display: grid;

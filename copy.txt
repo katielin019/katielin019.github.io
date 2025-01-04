@@ -1,3 +1,6 @@
+<span id="name">KATIE LIN</span> is a software designer and engineer
+
+
 I recently graduated from <span>Carnegie Mellon University</span>, where I studied <span>information systems</span>.
 While I was there, I <a href="https://github.com/ZahirSaiyed/HyprRun">made an iPhone app with some friends</a> using Spotify's <a href="https://developer.spotify.com/documentation/web-api">Web API</a> and <a href="https://developer.spotify.com/documentation/ios">iOS SDK</a>.
 

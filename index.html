@@ -3,29 +3,68 @@
 <head>
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
-	<link rel=stylesheet type=text/css href=shared.css>
+	<link rel=stylesheet type=text/css href=style.css>
 	<link rel=stylesheet type=text/css href=responsive.css>
-	<title>KATIE LIN</title>
-	<script>
-		(function() {
-			window.onresize = displayWindowSize;
-			window.onload = displayWindowSize;
-
-			function displayWindowSize() {
-				let myWidth = window.innerWidth;
-				let myHeight = window.innerHeight;
-				// your size calculation code here
-				document.getElementById("screen").innerHTML = myWidth + "x" + myHeight;
-			};
-		})();
-	</script>
+	<!-- <title>🪼 KATIE LIN</title> -->
+	<title>🦑 KATIE LIN</title>
 </head>
 <body>
 	<header>
-		<span id="name">KATIE LIN</span> is a software designer and engineer
+		<span>KATIE LIN</span> is a software designer and engineer.
 	</header>
 	<main>
-		
+		<div class="two-cols reverseDirectionMobile">
+			<div id="intro">
+				<p>
+					I recently graduated from <span>Carnegie Mellon University</span>,
+					where I studied <span>information systems</span>. While I was there,
+					I <a href="https://github.com/ZahirSaiyed/HyprRun">made an iPhone app
+					with some friends</a> using Spotify's <a href="https://developer.spotify.com/documentation/web-api">
+					Web API</a> and <a href="https://developer.spotify.com/documentation/ios">iOS SDK</a>.
+				</p>
+				<p>
+
+				</p>
+			</div>
+			<div id="work">
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th>WHAT</th>
+							<th>WHEN</th>
+							<th>BLURB</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="thumbnail"><img src=assets/hypr-run-thumb.png alt="thumbnail of screenshots from the app"></td>
+							<td><a href=https://github.com/ZahirSaiyed/HyprRun>HyprRun</a></td>
+							<td class="when">SEPT 2022 - DEC 2022</td>
+							<td>iOS app; won 2nd place in competition</td>
+						</tr>
+						<tr>
+							<td class="thumbnail"><img src=assets/typeshift-thumb.png alt="thumbnail of screenshots from the app"></td>
+							<td><a href=https://github.com/katielin019/zyzzyva>zyzzyva</a></td>
+							<td class="when">MAY 2024 - PRESENT</td>
+							<td>word lists</td>
+						</tr>
+						<tr>
+							<td class="thumbnail"><img src=assets/ratatouille-thumb.png alt="thumbnail of screenshots from the app"></td>
+							<td>Ratatouille filter</td>
+							<td class="when">MAY 2020</td>
+							<td>lil instagram filter made with SparkAR</td>
+						</tr>
+						<tr>
+							<td class="thumbnail"><img src=assets/prompts-thumb.png alt="thumbnail of screenshots from the app"></td>
+							<td>Prompts</td>
+							<td class="when">MAY 2024 - PRESENT</td>
+							<td>prompts feature</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</main>
 	<footer>
 		

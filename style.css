@@ -3,7 +3,7 @@
 :root {
     --text-color: rgb(30, 30, 30);
     --bg-color: rgb(229, 229, 229);
-    --accent: rgb(255, 131, 84);
+    --accent: #FD6944;
 }
 
 * {
@@ -24,12 +24,29 @@ header {
     font-weight: 400;
 }
 
-header>span {
+div.me {
+    display: inline-block;
+    padding: 4px 0;
+}
+
+input[type=checkbox].toggle {
+    display: none;
+ }
+ 
+
+span.me{
     font-size: 1.4em;
     font-style: normal;
     font-stretch: 125%;
     font-weight: 800;
     padding-right: 4px;
+}
+
+div.me:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transition-property: background-color, color;
+    transition-duration: 1s, 1s;
 }
 
 header,
@@ -111,21 +128,19 @@ footer {
 div.two-cols {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-gap: 3em;
+    grid-gap: 4em;
 }
 
 div.two-cols > div:nth-child(1) {
-    grid-column: span 5;
+    grid-column: span 4;
 }
 
-div#intro > p > span {
-    /* font-weight: 600; */
-    color: black;
-	background-color: rgb(255, 255, 185);
+div#intro > p.text > span {
+    font-weight: 600;
 }
 
 div.two-cols > div:nth-child(2) {
-    grid-column: span 8;
+    grid-column: span 7;
 }
 
 table {

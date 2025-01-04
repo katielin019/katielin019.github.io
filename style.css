@@ -29,9 +29,9 @@ div.me {
     padding: 4px 0;
 }
 
-input[type=checkbox].toggle {
+/* input[type=checkbox].toggle {
     display: none;
- }
+ } */
  
 
 span.me{
@@ -42,12 +42,14 @@ span.me{
     padding-right: 4px;
 }
 
-div.me:hover {
+span.me:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
-    transition-property: background-color, color;
-    transition-duration: 1s, 1s;
 }
+
+/* input.toggle:checked ~ p {
+    color: var(--accent);
+} */
 
 header,
 main {
@@ -196,3 +198,35 @@ td.thumbnail img:hover {
 td.when {
     font-size: 14px;
 }
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+    display: none;
+  }
+  
+  /* Hide expandable content by default */
+  .expandable {
+    visibility: collapse;
+    background: #ddd;
+  }
+
+/* Style the button */
+#expand-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 11px;
+    background-color: #ff7;
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  
+  /* Show hidden content when the checkbox is checked */
+  #expand-toggle:checked ~ * .expandable {
+    visibility: visible;
+  }
+  
+  /* Style the button when the checkbox is checked */
+  #expand-toggle:checked ~ #expand-btn {
+    background-color: #ccc;
+  }
+  

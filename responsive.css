@@ -18,6 +18,13 @@
         background-color: orange;
     }
 
+    div.two-cols {
+        display: grid;
+        gap: 5vw;
+        max-width: 100%;
+        grid-template-columns: minmax(300px, 500px) minmax(600px, 800px);
+    }
+
     /* div.†wo-cols {
         display: grid;
         gap: 1em;

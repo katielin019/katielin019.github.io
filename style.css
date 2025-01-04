@@ -38,7 +38,7 @@ main {
     /* padding: 30px 140px 0 140px; */
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 2vw;
+    padding-top: 3vh;
 }
 
 h1 {
@@ -109,11 +109,11 @@ footer {
 
 div.two-cols {
     display: grid;
-    gap: 3em;
+    gap: 8vw;
     /* grid-template-columns: minmax(auto, 400px) 1fr; */
     /* grid-template-columns: repeat(auto-fit, minmax(400px, 600px)); */
     max-width: 100%;
-    grid-template-columns: minmax(300px, 500px) minmax(600px, 900px);
+    grid-template-columns: 27vw 55vw;
 }
 
 table {
@@ -161,7 +161,7 @@ td.thumbnail img {
 }
 
 td.thumbnail img:hover {
-    transform: scale(3) translateX(-1em);
+    transform: scale(2.5) translateX(-1em);
 }
 
 td.when {

@@ -110,16 +110,22 @@ footer {
 
 div.two-cols {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     grid-gap: 3em;
 }
 
 div.two-cols > div:nth-child(1) {
-    grid-column: span 3;
+    grid-column: span 5;
+}
+
+div#intro > p > span {
+    /* font-weight: 600; */
+    color: black;
+	background-color: rgb(255, 255, 185);
 }
 
 div.two-cols > div:nth-child(2) {
-    grid-column: span 7;
+    grid-column: span 8;
 }
 
 table {

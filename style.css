@@ -117,6 +117,7 @@ div.two-cols>div:nth-child(2) {
 table {
     table-layout: auto;
     width: 100%;
+    border-collapse: collapse;
 }
 
 table,
@@ -130,11 +131,11 @@ thead th:nth-child(1) {
 }
 
 thead th:nth-child(2) {
-    width: 25%;
+    width: 20%;
 }
 
 thead th:nth-child(3) {
-    width: 20%;
+    width: 25%;
 }
 
 thead th:nth-child(4) {
@@ -143,8 +144,12 @@ thead th:nth-child(4) {
 
 td {
     padding: 4px;
-    text-align: center;
+    text-align: left;
     vertical-align: center;
+}
+
+td:not(.thumbnail) {
+    padding-left: 10px;
 }
 
 td.thumbnail img {

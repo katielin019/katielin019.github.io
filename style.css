@@ -4,6 +4,7 @@
     --text-color: rgb(30, 30, 30);
     --bg-color: rgb(229, 229, 229);
     --accent: #FD6944;
+    --border: rgb(0, 0, 0);
 }
 
 * {
@@ -54,6 +55,11 @@ body {
     /* padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh; */
+}
+
+div.wrapper {
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
@@ -154,7 +160,7 @@ table {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid var(--border);
 }
 
 thead th:nth-child(1) {
@@ -217,10 +223,18 @@ td.when {
 }
 
 /* Show hidden content when the checkbox is checked */
-#toggle:checked ~ main {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+#toggle:checked ~ div.wrapper{
+    /* background-color: var(--text-color);
+    color: var(--bg-color); */
+    --bg-color: rgb(30, 30, 30);
+    --text-color: rgb(229, 229, 229);
+    --accent: #FD6944;
+    --border: rgb(255, 255, 255);
 }
+
+/* #toggle:checked ~ div.wrapper > main > div.two-cols > div#work > table {
+    border: 1px solid white;
+} */
 
 /* Style the button when the checkbox is checked */
 #toggle:checked ~ #toggle-btn {

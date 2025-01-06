@@ -19,19 +19,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-label#toggle-btn {
-    display: inline-block;
-    padding: 4px 0;
-    font-size: 1.2em;
-    font-style: italic;
-    font-weight: 400;
-}
-
-/* input[type=checkbox].toggle {
-    display: none;
- } */
-
-
 span.me {
     font-size: 1.4em;
     font-style: normal;
@@ -40,13 +27,13 @@ span.me {
     padding-right: 4px;
 }
 
+header {
+    font-style: italic;
+}
+
 /* span.me:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
-} */
-
-/* input.toggle:checked ~ p {
-    color: var(--accent);
 } */
 
 body {
@@ -62,10 +49,10 @@ div.wrapper {
     height: 100vh;
 }
 
-main {
+header, main {
     padding: 30px 50px 0 50px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 h1 {
@@ -168,11 +155,11 @@ thead th:nth-child(1) {
 }
 
 thead th:nth-child(2) {
-    width: 20%;
+    width: 25%;
 }
 
 thead th:nth-child(3) {
-    width: 25%;
+    width: 20%;
 }
 
 thead th:nth-child(4) {
@@ -205,38 +192,4 @@ td.thumbnail img:hover {
 
 td.when {
     font-size: 14px;
-}
-
-/* Hide the toggle checkbox */
-#toggle {
-    display: none;
-}
-
-/* Style the button */
-#toggle-btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 5px 11px;
-    background-color: #ff7;
-    border: 1px solid;
-    border-radius: 3px;
-}
-
-/* Show hidden content when the checkbox is checked */
-#toggle:checked ~ div.wrapper{
-    /* background-color: var(--text-color);
-    color: var(--bg-color); */
-    --bg-color: rgb(30, 30, 30);
-    --text-color: rgb(229, 229, 229);
-    --accent: #FD6944;
-    --border: rgb(255, 255, 255);
-}
-
-/* #toggle:checked ~ div.wrapper > main > div.two-cols > div#work > table {
-    border: 1px solid white;
-} */
-
-/* Style the button when the checkbox is checked */
-#toggle:checked ~ #toggle-btn {
-    background-color: #ccc;
 }

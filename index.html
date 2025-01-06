@@ -33,97 +33,11 @@
 						or <a href="https://techcrunch.com/2021/02/10/quilt-an-audio-social-network-focused-on-self-care-raises-3-5-million-in-seed/">TechCrunch</a>.
 					</p>
 					<p class="text">
-						While I've made things with <span>Java</span>, TypeScript, React, JavaScript, <span>Ruby</span>, Python, and more, this website
-						is written in pure HTML + CSS. To be clear, I have nothing against using web frameworks or libraries to
-						accomplish something. But when I can, I prefer to simplify.
+						This website is written in <span>pure HTML + CSS</span>. To be clear, I have nothing against using
+						frameworks or libraries to accomplish something; I just prefer to use simple tools for simple tasks.
+						The best way to manage dependencies is to minimize them. That said, I can and do write code in several
+						other languages and use frameworks like Rails and libraries like React all the time.
 					</p>
-					<ol>
-						<li>
-							<b>Return to vanilla HTML/CSS</b> &ndash; I think we've reached the point where html/css is more
-							powerful, and nicer to use than ever before. Instead of starting with a giant template filled with .js
-							includes, it's now okay to just write plain HTML from scratch again. CSS Flexbox and Grid, canvas,
-							Selectors, box-shadow, the video element, filter, etc. eliminate a lot of the need for JavaScript
-							libraries. We can avoid jquery and bootstrap when they're not needed. The more libraries incorporated
-							into the website, the more fragile it becomes. Skip the polyfills and CSS prefixes, and stick with the
-							CSS attributes that work across all browsers. And frequently validate your HTML; it could save you a
-							headache in the future when you encounter a bug.
-						</li>
-						<li>
-							<b>Don't minimize that HTML</b> &ndash; minimizing (compressing) your HTML and associated CSS/JS seems
-							like it saves precious bandwidth and all the big companies are doing it. But why not? Well, you don't
-							save much because your web pages should be gzipped before being sent over the network, so preemptively
-							shrinking your content probably doesn't do much to save bandwidth if anything at all. But even if it did
-							save a few bytes (it's just text in the end), you now need to have a build process and to add this to
-							your workflow, so updating a website just became more complex. If there's a bug or future
-							incompatibility in the html, the minimized form is harder to debug. And it's unfriendly to your users;
-							so many people got their start with HTML by smashing that View Source button, and minimizing your HTML
-							prevents this ideal of learning by seeing what they did. Minimizing HTML does not preserve its
-							educational quality, and what gets archived is only the resulting codejunk.
-						</li>
-						<li>
-							<b>Prefer one page over several</b> &ndash; several pages are hard to maintain. You can lose track of
-							which pages link to what, and it also leads to some system of page templates to reduce redundancy. How
-							many pages can one person really maintain? Having one file, probably just an index.html, is simple and
-							unforgettable. Make use of that infinite vertical scroll. You never have to dig around your files or
-							grep to see where some content lies. And how should your version control that file? Should you use git?
-							Shove them in an 'old/' folder? Well I like the simple approach of naming old files with the date they
-							are retired, like index.20191213.html. Using the ISO format of the date makes it so that it sorts
-							easily, and there's no confusion between American and European date formats. If I have multiple versions
-							in one day, I would use a style similar to that which is customary in log files, of
-							index.20191213.1.html. A nice side effect is then you can access an older version of the file if you
-							remember the date, without logging into the web host.
-						</li>
-						<li>
-							<b>End all forms of hotlinking</b> &ndash; this cautionary word seems to have disappeared from internet
-							vocabulary, but it's one of the reasons I've seen a perfectly good website fall apart for no reason.
-							Stop directly including images from other websites, stop "borrowing" stylesheets by just linking to
-							them, and especially stop linking to JavaScript files, even the ones hosted by the original developers.
-							Hotlinking is <a
-								href="https://webmasters.stackexchange.com/questions/25315/hotlinking-what-is-it-and-why-shouldnt-people-do-it">usually
-								considered rude</a> since your visitors use someone else's bandwidth, it makes the user experience
-							slower, you let another website track your users, and worse of all if the location you're linking to
-							changes their folder structure or just goes offline, then the failure cascades to your website as well.
-							Google Analytics is unnecessary; store your own server logs and set up <a
-								href="https://goaccess.io/">GoAccess</a> or cut them up however you like, giving you more detailed
-							statistics. Don't give away your logs to Google for free.
-						</li>
-						<li>
-							<b>Stick with native fonts</b> &ndash; we're focusing on content first, so decorative and unusual
-							typefaces are completely unnecessary. Stick with either the 13 web-safe fonts or a <a
-								href="https://systemfontstack.com/">system font stack</a> that matches the default font to the
-							operating system of your visitor. Using the system font stack might look a bit different between
-							operating systems, but your layout shouldn't be so brittle that an extra word wrap will ruin it. Then
-							you don't have to worry about the flashing font problem either. Your focus should be about delivering
-							the content to the user effectively and making the choice of font be invisible, rather than getting
-							noticed to stroke your design ego.
-						</li>
-						<li>
-							<b>Obsessively compress your images</b> &ndash; faster for your users, less space to archive, and easier
-							to maintain when you don't have to back up a humongous folder. Your images can have the same high
-							quality, but be smaller. <a href="https://victorzhou.com/blog/minify-svgs/">Minify your SVGs</a>,
-							losslessly compress your PNGs, generate JPEGs to exactly fit the width of the image. It's worth spending
-							some time figuring out the most optimal way to compress and <a
-								href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">reduce
-								the size of your images</a> without losing quality. And once <a
-								href="https://caniuse.com/#feat=webp">WebP gains support on Safari</a>, switch over to that format.
-							Ruthlessly minimize the total size of your website and keep it as small as possible. Every MB can cost
-							someone real money, and in fact, my mobile carrier (Google Fi) charges a cent per MB, so a 25 MB website
-							which is fairly common nowadays, costs a quarter itself, about as much as a newspaper when I was a
-							child.
-						</li>
-						<li>
-							<b>Eliminate the broken URL risk</b> &ndash; there are <a href="https://uptimerobot.com">monitoring
-								services</a> that will tell you when your URL is down, preventing you from realizing one day that
-							your homepage hasn't been loading for a month and the search engines have deindexed it. Because 10 years
-							is longer than most hard drives or operating systems are meant to last. But to eliminate the risk of a
-							URL breaking completely, set up a second monitoring service. Because if the first one stops for any
-							reason (they move to a pay model, they shut down, you forget to renew something, etc.) you will still
-							get one notification when your URL is down, then realize the other monitoring service is down because
-							you didn't get the second notification. Remember that we're trying to keep something up for over 10
-							years (ideally way longer, even 30 years), and a lot of services will shut down during this period, so
-							two monitoring services is safer.
-						</li>
-					</ol>  
 				</div>
 				<div id="work">
 					<table>

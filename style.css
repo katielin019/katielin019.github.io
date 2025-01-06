@@ -18,15 +18,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-header {
+label#toggle-btn {
+    display: inline-block;
+    padding: 4px 0;
     font-size: 1.2em;
     font-style: italic;
     font-weight: 400;
-}
-
-div.me {
-    display: inline-block;
-    padding: 4px 0;
 }
 
 /* input[type=checkbox].toggle {
@@ -42,23 +39,27 @@ span.me {
     padding-right: 4px;
 }
 
-span.me:hover {
+/* span.me:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
-}
+} */
 
 /* input.toggle:checked ~ p {
     color: var(--accent);
 } */
 
-header,
-main {
+body {
     margin: 0 auto;
     /* padding: 30px 140px 0 140px; */
-    padding: 30px 50px 0 50px;
     /* padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh; */
+}
+
+main {
+    padding: 30px 50px 0 50px;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -119,11 +120,11 @@ ol>li:before {
     font-weight: 700;
 }
 
-footer {
+/* footer {
     text-align: right;
     margin-top: 80px;
     padding-bottom: 20px;
-}
+} */
 
 /* NEW STUFF */
 
@@ -201,18 +202,12 @@ td.when {
 }
 
 /* Hide the toggle checkbox */
-#expand-toggle {
+#toggle {
     display: none;
 }
 
-/* Hide expandable content by default */
-.expandable {
-    visibility: collapse;
-    background: #ddd;
-}
-
 /* Style the button */
-#expand-btn {
+#toggle-btn {
     display: inline-block;
     margin-top: 12px;
     padding: 5px 11px;
@@ -222,11 +217,12 @@ td.when {
 }
 
 /* Show hidden content when the checkbox is checked */
-#expand-toggle:checked~* .expandable {
-    visibility: visible;
+#toggle:checked ~ main {
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 /* Style the button when the checkbox is checked */
-#expand-toggle:checked~#expand-btn {
+#toggle:checked ~ #toggle-btn {
     background-color: #ccc;
 }

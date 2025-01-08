@@ -54,22 +54,23 @@ header > div.left > p {
 	font-style: italic;
 }
 
-header > nav.right {
+header > div.right {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
+	gap: 2px;
 }
 
-nav a {
+a.nav {
 	color: blue;
 	background-color: white;
-	display: block;
+	display: inline-block;
 }
 
-nav a:hover {
+a.nav:hover {
 	color: white;
 	background-color: blue;
-	display: block;
+	display: inline-block;
 }
 
 main {
@@ -86,26 +87,25 @@ main > div.container {
 	gap: 8%;
 }
 
+/* main > div.container > div.right {
+	max-width: 600px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	grid-auto-rows: minmax(270px, auto);
+	height: fit-content;
+} */
+
 /* MEDIA QUERIES NEED TO GO AFTER THE ORIGINAL CODE THEY'RE MODIFYING */
 @media only screen and (min-width: 0px) and (max-width: 960px) {
 	main > div.container {
 		display: block;
 	}
 
-	main > div.left {
-		padding-bottom: 32px;
+	main > div.container > div.left {
+		margin-bottom: 32px;
 		max-width: 640px
 	}
-}
-
-main > div.right {
-	max-width: 600px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 10px;
-	grid-auto-rows: minmax(270px, auto);
-	/* grid-auto-flow: column; */
-	height: fit-content;
 }
 
 img {
@@ -122,16 +122,6 @@ section {
 	line-height: 160%;
 }
 
-section > mark {
-	/* display: none; */
-	background-color: white;
-}
-
-/* section > mark:hover {
-	background-color: var(--bg-color);
-	border-bottom: var(--bg-color) dotted 2px;
-} */
-
 .break {
 	height: 20px;
 }
@@ -147,6 +137,11 @@ a:hover {
 	/* background-color: var(--accent-color); */
 }
 
-span {
+section > span {
 	font-weight: 500;
+	color: red;
+}
+
+footer {
+	padding: 0px 32px 16px 32px; 
 }

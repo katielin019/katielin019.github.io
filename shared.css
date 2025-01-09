@@ -30,31 +30,33 @@ header {
 	margin: 32px;
 	margin-top: 16px;
 	margin-bottom: 16px;
+}
 
+div.two-cols {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-header > div.left > span {
+span#name {
 	font-size: 1.4rem;
 	font-stretch: 125%;
 	font-weight: 800;
 }
 
-header > div.left > span:hover {
+header span.nav:hover {
 	color: white;
 	background-color: black;
 }
 
-header > div.left > p {
+header p {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 0px;
 	font-style: italic;
 }
 
-header > div.right {
+header div.right {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
@@ -106,6 +108,17 @@ main > div.container {
 		margin-bottom: 32px;
 		max-width: 640px
 	}
+
+	footer > div.two-cols {
+		display: block;
+	}
+}
+
+div.left > img {
+	border: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 img {
@@ -139,9 +152,15 @@ a:hover {
 
 section > span {
 	font-weight: 500;
-	color: red;
+	/* color: red; */
 }
 
 footer {
-	padding: 0px 32px 16px 32px; 
+	padding: 16px 32px 32px 32px;
+	font-size: 16px;
+}
+
+footer:hover > span {
+	color: white;
+	background-color: red;
 }

@@ -26,6 +26,11 @@ main {
 }
 
 section {
+	background-color: lightslategrey;
+	border-radius: 8px;
+}
+
+section#me {
 	background-color: sienna;
 	border-radius: 8px;
 }
@@ -69,27 +74,36 @@ hr {
 p.footnote {
 	font-size: 0.8em;
 }
-
-div#cover-1 {
-	background: url(work/assets/cover-1.png) no-repeat;
-	background-size: cover;
-}
 </style>
 </head>
 
 <body>
 	<main>
-		<section class=card-lrg>
+		<section class=card-lrg id=me>
 			<div class=contents>
 				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
 				<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
 			</div>
 		</section>
 		<section class=card-med>
-			<div class=contents></div>
+			<div class=contents>
+				<img src=work/assets/cover-2.png width=100%>
+			</div>
+		</section>
+		<section class=card-med>
+			<div class=contents>
+				<img src=work/assets/cover-2.png width=100%>
+			</div>
 		</section>
 		<section class=card-lrg>
-			<div class=contents id=cover-1>
+			<div class=contents>
+				<img src=work/assets/cover-1.png width=100%>
+			</div>
+		</section>
+		<section class=card-lrg id=me>
+			<div class=contents>
+				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
+				<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
 			</div>
 		</section>
 	</main>

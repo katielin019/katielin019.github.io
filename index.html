@@ -16,12 +16,6 @@ html, body {
 	width: 100%;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	max-width: 100vw;
-}
-
 main {
 	margin: 32px;
 	margin-top: 16px;
@@ -46,6 +40,19 @@ h1 > span:hover {
 	color: blue;
 }
 
+hr {
+	/* top, bottom | left, right */
+	margin: 2em 0em;
+	opacity: 0.35;
+}
+
+div.container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
 div.card {
 	display: flex;
 	height: 250px;
@@ -56,9 +63,7 @@ div.card {
 }
 
 footer {
-	padding: 1em;
-	float: right;
-	color: black;
+	margin: 16px 32px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 960px) {

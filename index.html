@@ -9,7 +9,7 @@
 html, body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	color: white;
-	background-color: sienna;
+	background-color: forestgreen;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -17,9 +17,27 @@ html, body {
 }
 
 main {
-	margin: 32px;
-	margin-top: 16px;
-	margin-bottom: 16px;
+	/* top, bottom | left, right */
+	margin: 16px 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section {
+	background-color: sienna;
+}
+
+section > div.contents {
+	padding: 16px;
+}
+
+section.card-lrg {
+	flex: 0 1 48%;
+}
+
+section.card-med {
+	flex: 0 1 24%;
 }
 
 h1 {
@@ -45,45 +63,20 @@ hr {
 	margin: 2em 0em;
 	opacity: 0.35;
 }
-
-.container {
-	box-sizing: border-box;
-}
-
-/* https://codepen.io/teddyzetterlund/pen/YPjEzP */
-.card {
-	background-image: 
-		linear-gradient(180deg, white 3rem, #F0A4A4 calc(3rem), #F0A4A4 calc(3rem + 2px), transparent 1px),
-		repeating-linear-gradient(0deg, transparent, transparent 1.5rem, #DDD 1px, #DDD calc(1.5rem + 1px));
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
-	height: 14rem;
-	width: 400px;
-
-	margin: auto;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
 </style>
 </head>
 
 <body>
 	<main>
-		<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
-		<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
-		<div class=container>
-			<div class=card></div>
-		</div>
-		<hr>
-		<p class=footnote><sup><a id=footnote1 href=#fn1>1</a></sup> https://en.wikipedia.org/wiki/Non-game</p>
+		<section class=card-lrg>
+			<div class=contents>
+				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
+				<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
+				<hr>
+				<p class=footnote><sup><a id=footnote1 href=#fn1>1</a></sup> https://en.wikipedia.org/wiki/Non-game</p>
+			</div>
+		</section>
 	</main>
-	<footer>
-		<div class=left>
-			<p>Less, but better.</p>
-		</div>
-		<div class=right>
-		</div>
-	</footer>
 </body>
 
 </html>

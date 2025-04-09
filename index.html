@@ -21,7 +21,8 @@ main {
 	margin: 16px 32px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
+	row-gap: 1em;
 }
 
 section {
@@ -68,6 +69,11 @@ hr {
 p.footnote {
 	font-size: 0.8em;
 }
+
+div#cover-1 {
+	background: url(work/assets/cover-1.png) no-repeat;
+	background-size: cover;
+}
 </style>
 </head>
 
@@ -77,6 +83,13 @@ p.footnote {
 			<div class=contents>
 				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
 				<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
+			</div>
+		</section>
+		<section class=card-med>
+			<div class=contents></div>
+		</section>
+		<section class=card-lrg>
+			<div class=contents id=cover-1>
 			</div>
 		</section>
 	</main>

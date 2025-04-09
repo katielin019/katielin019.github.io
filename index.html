@@ -16,14 +16,27 @@ html, body {
 h1 {
 	font-weight: 600;
 	font-size: 1.75em;
+}
+
+h1:hover {
 	color: silver;
+}
+
+h1:hover > span {
+	color: white;
+}
+
+h1 > span:hover {
+	color: mediumturquoise;
 }
 </style>
 </head>
 
 <body>
-	<h1>Katie Lin is a <span style="color: white">product designer</span> and <span style="color: white">engineer</style>.</h1>
+	<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
 	<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
+	<div class=container>
+	</div>
 	<hr>
 	<p class=footnote><sup><a id=footnote1 href=fn1>1</a></sup> https://en.wikipedia.org/wiki/Non-game</p>
 </body>

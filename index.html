@@ -6,21 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Katie Lin</title>
 <style>
-:root {
+html, body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+	background-color: sienna;
 	margin: 0;
 	padding: 0;
-	background-color: sienna;
-	color: white;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-html, body {
 	height: 100%;
 	width: 100%;
 }
 
 body {
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 	max-width: 100vw;
@@ -48,19 +44,6 @@ h1:hover > span {
 
 h1 > span:hover {
 	color: blue;
-}
-
-main > div.container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 8%;
-}
-
-div.two-cols {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 div.card {
@@ -97,25 +80,23 @@ footer {
 
 <body>
 	<main>
-		<div class='container two-cols'>
-			<div class=left>
+		<div class=container>
+			<section class=flex-left>
 				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
 				<p>I'm interested in alternative models of education, non-games<sup><a id=fn1 href=#footnote1>1</a></sup> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
 				<hr>
 				<p class=footnote><sup><a id=footnote1 href=#fn1>1</a></sup> https://en.wikipedia.org/wiki/Non-game</p>
-			</div>
-			<div class=right>
-				<div class=cards>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-					<div class=card></div>
-				</div>
-			</div>
+			</section>
+			<section class=flex-right>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+				<div class=card></div>
+			</section>
 		</div>
 	</main>
 	<footer class=two-cols>

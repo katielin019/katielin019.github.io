@@ -82,7 +82,7 @@ h1 > span:hover {
 	font-size: 0.8em;
 } */
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 992px) {
     main {
         /* top, bottom | left, right */
         margin: 0 auto;
@@ -90,7 +90,7 @@ h1 > span:hover {
     }
 
     div.lrg {
-        flex: 0 1 calc(100% - 4em);
+        flex: 1 1 calc(100% - 4em);
         padding: 1em;
     }
     

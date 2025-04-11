@@ -4,109 +4,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Katie Lin</title>
-<style>
-html, body {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: white;
-	background-color: black;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-}
-
-main {
-	/* top, bottom | left, right */
-	margin: 16px 32px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 1em;
-}
-
-div.card-lrg, div.card-med {
-	background-color: lightslategrey;
-	border-radius: 8px;
-}
-
-div.card-lrg:hover, div.card-med:hover {
-	opacity: 0.85;
-}
-
-div#me {
-	background-color: sienna;
-	border-radius: 8px;
-}
-
-div.contents {
-	padding: 8px 24px;
-}
-
-div.card-lrg {
-	flex: 1 1 calc(50% - 4em);
-	padding: 1em;
-}
-
-div.card-med {
-	flex: 1 1 calc(25% - 2em);
-	padding: 1em;
-}
-
-h1 {
-	font-weight: 600;
-	font-size: 1.5em;
-	margin: 16px 0px;
-}
-
-h1:hover {
-	color: silver;
-}
-
-h1:hover > span {
-	color: white;
-}
-
-h1 > span:hover {
-	color: blue;
-}
-
-hr {
-	/* top | left, right | bottom */
-	margin: 2em 0 0.5em;
-	opacity: 0.64;
-}
-
-p.footnote {
-	font-size: 0.8em;
-}
-</style>
 </head>
 
 <body>
 	<main>
-		<div class=card-lrg id=me>
+		<div class="card lrg text" id=me>
 			<div class=contents>
-				<h1>Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
+				<h1 class="title">Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
 				<p>I'm interested in alternative models of education, <a href=https://en.wikipedia.org/wiki/Non-game>non-games</a> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
 			</div>
 		</div>
-		<div class=card-med style="background-color: forestgreen;">
+		<div class="card med cover" style="background-color: forestgreen;">
 			<div class=contents>
-				<img src=work/assets/cover-2.png width=100%>
+				<img src=assets/cover-2.png width=100%>
 			</div>
 		</div>
-		<div class=card-med>
+		<div class="card med cover">
 			<div class=contents>
-				<img src=work/assets/cover-2.png width=100%>
+				<img src=assets/hypr-run.png width=100%>
 			</div>
 		</div>
-		<div class=card-lrg style="background-color: steelblue;">
+		<div class="card lrg cover" style="background-color: steelblue; padding-bottom: 0px;">
 			<div class=contents>
-				<img src=work/assets/cover-1.png width=100%>
+				<img src=assets/cover-1.png width=100%>
 			</div>
 		</div>
-		<div class=card-lrg style="background-color: mediumpurple;">
+		<div class="card lrg text" style="background-color: mediumpurple;">
 			<div class=contents>
 				<h1>Quilt was an audio social network focused on self-care.</h1>
 				<p>It began as a community platform that facilitated IRL conversations. Quilt's 1.0 audio app was a direct response to the COVID-19 pandemic. I joined Quilt in October 2020 as a product marketer focused on GTM strategy. As with many startups, I wore several hats, and within 2 months, I ended up working as a full-fledged product designer.</p>

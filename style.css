@@ -36,10 +36,6 @@ div#me {
 	border-radius: 8px;
 }
 
-div.contents {
-	padding: 8px 24px;
-}
-
 div.lrg {
 	flex: 1 1 calc(50% - 4em);
 }
@@ -49,7 +45,8 @@ div.med {
 }
 
 div.text {
-    padding: 1em 0.5em;
+    /* padding: 16px 8px; */
+    padding: 8px 24px;
 }
 
 div.cover {
@@ -74,24 +71,16 @@ h1 > span:hover {
 	color: blue;
 }
 
-hr {
-	/* top | left, right | bottom */
+/* hr {
 	margin: 2em 0 0.5em;
 	opacity: 0.64;
-}
+} */
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     main {
         /* top, bottom | left, right */
         margin: 0 auto;
         padding: 16px 32px;
-    }
-    
-    div.container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 1em;
     }
 
     div.lrg {
@@ -100,13 +89,5 @@ hr {
     
     div.med {
         flex: 1 1 calc(50% - 1em);
-    }
-
-    div.text {
-        padding: 16px 8px;
-    }
-    
-    div.cover {
-        padding: 16px 0px;
     }
 }

@@ -21,6 +21,20 @@ div.container {
 	gap: 1em;
 }
 
+div.vertical {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50%);
+    gap: 1em;
+}
+
+div.horizontal {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 calc(50%);
+    gap: 1em;
+}
+
 div.card {
 	background-color: lightslategrey;
 	border-radius: 8px;
@@ -73,18 +87,8 @@ h1 > span:hover {
 	color: blue;
 }
 
-/* hr {
-	margin: 2em 0 0.5em;
-	opacity: 0.64;
-} */
-
-/* p.footnote {
-	font-size: 0.8em;
-} */
-
 @media only screen and (min-width: 0px) and (max-width: 992px) {
     main {
-        /* top, bottom | left, right */
         margin: 0 auto;
         padding: 16px 32px;
     }

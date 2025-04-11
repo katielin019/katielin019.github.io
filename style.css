@@ -17,7 +17,7 @@ main {
 div.container {
     display: flex;
     gap: 1em;
-    flex: 1;
+    /* flex: 0 1 100px; */
 }
 
 div.vertical {
@@ -39,14 +39,26 @@ div.frame {
         display: grid;
     }
 
-    div.horizontal {
+    /* div.horizontal {
         display: grid;
+    } */
+
+    /* div.horizontal-2 {
+        display: grid;
+    } */
+
+    div.frame {
+        flex: 0 1 100px;
     }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1200px) {
     div.horizontal-main {
         display: grid;
+    }
+
+    div.frame {
+        flex: 0 1 100px;
     }
 }
 

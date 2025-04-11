@@ -29,25 +29,28 @@ div.horizontal {
 }
 
 div.frame {
-    padding: 4em;
+    padding: 16px 32px;
     border-radius: 0.5em;
     flex: 1;
 }
 
-div.full {
-    flex: 1 1 calc(50% - 4em);
-}
-
-div.half {
-    flex: 1 1 calc(25% - 2em);
-}
-
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-    div.full {
-        flex: 1 1 calc(100% - 2em);
+    div.vertical {
+        display: grid;
     }
 
-    div.half {
-        flex: 1 1 calc(50% - 1em);
+    div.horizontal {
+        display: grid;
     }
 }
+
+#about h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 16px 0 8px;
+}
+
+#about h1:hover { color: silver; }
+#about h1:hover > span { color: white; }
+#about h1 > span:hover { color: blue; }
+

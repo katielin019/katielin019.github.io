@@ -10,7 +10,6 @@ html, body {
 
 main {
     max-width: 992px;
-	/* top, bottom | left, right */
 	margin: 16px auto;
     padding: 0 32px;
 }

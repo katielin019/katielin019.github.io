@@ -10,9 +10,12 @@ html, body {
 
 main {
     max-width: 992px;
-	margin: 16px auto;
-    padding: 0 32px;
-	display: flex;
+	margin: 0 auto;
+    padding: 16px 32px;
+}
+
+div.container {
+    display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 1em;
@@ -23,9 +26,22 @@ div.card {
 	border-radius: 8px;
 }
 
+div.spacer {
+    background-color: black;
+    flex: 1 1 64px;
+}
+
+div.empty {
+    background-color: black;
+}
+
 /* div.card-lrg:hover, div.card-med:hover {
 	opacity: 0.85;
 } */
+
+div#me {
+    background-color: sienna;
+}
 
 div.lrg {
 	flex: 1 1 calc(50% - 4em);
@@ -41,7 +57,7 @@ div.text {
 }
 
 div.cover {
-    padding: 1em;
+    padding: 8px 0;
 }
 
 h1 {
@@ -67,9 +83,9 @@ h1 > span:hover {
 	opacity: 0.64;
 } */
 
-p.footnote {
+/* p.footnote {
 	font-size: 0.8em;
-}
+} */
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     main {
@@ -78,7 +94,7 @@ p.footnote {
         padding: 16px 32px;
     }
 
-    div.card-lrg {
+    div.lrg {
         flex: 0 1 calc(100% - 4em);
         padding: 1em;
     }

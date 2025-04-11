@@ -6,70 +6,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Katie Lin</title>
-	<style>
-		#index div {
-			display: none;
-		}
-
-		#filter-Me:checked ~ #index div[data-type-primary=Me] { display: block; }
-		#filter-Quilt:checked ~ #index div[data-type-primary=Quilt] { display: block; }
-		#filter-Dev:checked ~ #index div[data-type-primary=Dev] { display: block; }
-		#filter-Other:checked ~ #index div[data-type-primary=Other] { display: block; }
-
-		div[data-type-primary=Me] {
-			background-color: sienna;
-		}
-
-		div[data-type-primary=Quilt] {
-			background-color: mediumpurple;
-		}
-
-		div.cover {
-			background-color: lightslategrey;
-		}
-
-		div[data-type-primary=Dev] {
-			background-color: forestgreen;
-		}
-
-		div[data-type-primary=Other] {
-			background-color: white;
-		}
-	</style>
 </head>
 
 <body>
 	<main>
-		<div class="card lrg text" id=me>
-			<div class=contents>
-				<h1 class="title">Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
-				<p>I'm interested in alternative models of education, <a href=https://en.wikipedia.org/wiki/Non-game>non-games</a> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
+		<div class="container">
+			<div class="card lrg text" id=me>
+				<div class=contents>
+					<h1 class="title">Katie Lin is a <span>product designer</span> and <span>engineer</style>.</h1>
+					<p>I'm interested in alternative models of education, <a href=https://en.wikipedia.org/wiki/Non-game>non-games</a> and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
+				</div>
 			</div>
-		</div>
-		<div class="card med cover" style="background-color: forestgreen;">
-			<div class=contents>
-				<img src=assets/cover-2.png width=100%>
+			<div class="card med cover" style="background-color: forestgreen;">
+				<div class=contents>
+					<img src=assets/cover-2.png width=100%>
+				</div>
 			</div>
-		</div>
-		<div class="card med cover">
-			<div class=contents>
-				<img src=assets/hypr-run.png width=100%>
+			<div class="card med cover">
+				<div class=contents>
+					<img src=assets/hypr-run.png width=100%>
+				</div>
 			</div>
-		</div>
-		<div class="card lrg cover" style="background-color: steelblue; padding-bottom: 0px;">
-			<div class=contents>
-				<img src=assets/cover-1.png width=100%>
+			<div class="card lrg cover" style="background-color: steelblue; padding-bottom: 0px;">
+				<div class=contents>
+					<img src=assets/cover-1.png width=100%>
+				</div>
 			</div>
-		</div>
-		<div class="card lrg text" style="background-color: mediumpurple;">
-			<div class=contents>
-				<h1>Quilt was an audio social network focused on self-care.</h1>
-				<p>It began as a community platform that facilitated IRL conversations. Quilt's 1.0 audio app was a direct response to the COVID-19 pandemic. I joined Quilt in October 2020 as a product marketer focused on GTM strategy. As with many startups, I wore several hats, and within 2 months, I ended up working as a full-fledged product designer.</p>
+			<div class="card lrg text" style="background-color: mediumpurple;">
+				<div class=contents>
+					<h1>Quilt was an audio social network focused on self-care.</h1>
+					<p>It began as a community platform that facilitated IRL conversations. Quilt's 1.0 audio app was a direct response to the COVID-19 pandemic. I joined Quilt in October 2020 as a product marketer focused on GTM strategy. As with many startups, I wore several hats, and within 2 months, I ended up working as a full-fledged product designer.</p>
+				</div>
 			</div>
-			<div class="card lrg cover" data-type-primary=Me style="background-color: white;">
+			<div class="spacer"></div>
+			<div class="card med cover" data-type-primary=Me style="background-color: white;">
 				<img src="assets/IMG_2531_Original.jpg" width=100%>
 			</div>
-		</div> -->
+			<div class="spacer"></div>
+		</div>
 	</main>
 </body>
 

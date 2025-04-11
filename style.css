@@ -12,10 +12,7 @@ main {
     max-width: 992px;
 	margin: 16px auto;
     padding: 0 32px;
-}
-
-div.container {
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 1em;
@@ -44,7 +41,7 @@ div.text {
 }
 
 div.cover {
-    padding: 16px 0px;
+    padding: 1em;
 }
 
 h1 {
@@ -70,6 +67,10 @@ h1 > span:hover {
 	opacity: 0.64;
 } */
 
+p.footnote {
+	font-size: 0.8em;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     main {
         /* top, bottom | left, right */
@@ -77,8 +78,9 @@ h1 > span:hover {
         padding: 16px 32px;
     }
 
-    div.lrg {
-        flex: 1 1 calc(100% - 2em);
+    div.card-lrg {
+        flex: 0 1 calc(100% - 4em);
+        padding: 1em;
     }
     
     div.med {

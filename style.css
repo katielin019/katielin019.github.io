@@ -31,6 +31,7 @@ div.horizontal {
 div.frame {
     padding: 16px 32px;
     border-radius: 0.5em;
+    flex: 1 1 0;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -39,6 +40,12 @@ div.frame {
     }
 
     div.horizontal {
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+    div.horizontal-main {
         display: grid;
     }
 }

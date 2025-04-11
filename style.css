@@ -13,7 +13,10 @@ main {
 	/* top, bottom | left, right */
 	margin: 16px auto;
     padding: 0 32px;
-	display: flex;
+}
+
+div.container {
+    display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	gap: 1em;
@@ -50,7 +53,7 @@ div.text {
 }
 
 div.cover {
-    padding: 1em;
+    padding: 16px 0px;
 }
 
 h1 {
@@ -77,27 +80,33 @@ hr {
 	opacity: 0.64;
 }
 
-p.footnote {
-	font-size: 0.8em;
-}
-
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     main {
         /* top, bottom | left, right */
-        margin: 16px 32px;
+        margin: 0 auto;
+        padding: 16px 32px;
+    }
+    
+    div.container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 1em;
     }
 
-    div.card-lrg {
-        flex: 0 1 calc(100% - 4em);
-        padding: 1em;
+    div.lrg {
+        flex: 1 1 calc(100% - 2em);
     }
     
-    div.card-med {
-        flex: 0 1 calc(50% - 4em);
-        padding: 1em;
+    div.med {
+        flex: 1 1 calc(50% - 1em);
+    }
+
+    div.text {
+        padding: 16px 8px;
+    }
+    
+    div.cover {
+        padding: 16px 0px;
     }
 }

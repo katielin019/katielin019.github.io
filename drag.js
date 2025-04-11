@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 dragSrcEl.classList.remove('card-lrg');
                 dragSrcEl.classList.add('card-med');
             }
+            this.style.opacity = '1';
+            dragSrcEl.style.opacity = '1';
         }
         
         return false;

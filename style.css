@@ -26,11 +26,6 @@ div.card {
 	border-radius: 8px;
 }
 
-div.spacer {
-    background-color: black;
-    flex: 1 1 64px;
-}
-
 div.empty {
     background-color: black;
 }

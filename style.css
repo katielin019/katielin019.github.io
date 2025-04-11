@@ -30,11 +30,6 @@ div.card {
 	opacity: 0.85;
 } */
 
-div#me {
-	background-color: sienna;
-	border-radius: 8px;
-}
-
 div.lrg {
 	flex: 1 1 calc(50% - 4em);
 }

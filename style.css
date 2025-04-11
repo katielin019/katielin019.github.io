@@ -9,66 +9,24 @@ html, body {
 }
 
 main {
-    /* max-width: 992px; */
-    /* margin: 0 auto; */
-    padding: 16px 32px;
+    margin: 16px 32px;
 }
 
-div.container {
-    display: flex;
-    gap: 1em;
-    /* flex: 0 1 100px; */
+table {
+    margin: 2rem 0;
 }
 
-div.vertical {
-    flex-direction: column;
+img {
+    height: auto;
+    width: auto;
 }
 
-div.horizontal {
-    flex-direction: row;
+/* https://hack.wesleyac.com/pokemon.html */
+#index tr {
+    display: none;
 }
 
-div.frame {
-    padding: 16px 32px;
-    border-radius: 0.5em;
-    flex: 1 1 0;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-    div.vertical {
-        display: grid;
-    }
-
-    /* div.horizontal {
-        display: grid;
-    } */
-
-    /* div.horizontal-2 {
-        display: grid;
-    } */
-
-    div.frame {
-        flex: 0 1 100px;
-    }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 1200px) {
-    div.horizontal-main {
-        display: grid;
-    }
-
-    div.frame {
-        flex: 0 1 100px;
-    }
-}
-
-#about h1 {
-    font-weight: 600;
-    font-size: 1.5em;
-    margin: 16px 0 8px;
-}
-
-#about h1:hover { color: silver; }
-#about h1:hover > span { color: white; }
-#about h1 > span:hover { color: blue; }
-
+#filter-Me:checked ~ #index tr[data-type-primary=Me] { display: table-row; }
+#filter-Quilt:checked ~ #index tr[data-type-primary=Quilt] { display: table-row; }
+#filter-Dev:checked ~ #index tr[data-type-primary=Dev] { display: table-row; }
+#filter-Other:checked ~ #index tr[data-type-primary=Other] { display: table-row; }

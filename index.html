@@ -7,45 +7,32 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <main>
-		<div class="container vertical">
-			<div class="container horizontal horizontal-main">
-				<div class="container vertical">
-					<div class="frame" id="about" style="background-color: sienna;">
-						<h1>Katie Lin is a <span>product designer</span> and <span>engineer</span>.</h1>
-						<p>I'm interested in alternative models of education, non-games and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</p>
-					</div>
-					<div class="container horizontal-1">
-						<div class="frame" style="background-color: black; border: white 2px solid; flex-grow: 0;">
-							<img src="assets/me.jpeg" style="height: auto; width: auto; max-width: 200px; max-height: 240px;">
-						</div>
-						<div class="frame" style="background-color: mediumaquamarine;">
-							<img src="assets/Frame 28321.png" style="height: auto; width: auto; max-width: 400px; max-height: 240px;">
-						</div>
-					</div>
-					<div class="frame" style="background-color: lightslategrey;"></div>
-					<!-- <div class="frame" style="background-color: mediumpurple;"></div> -->
-				</div>
-				<div class="container vertical">
-					<div class="frame" style="background-color: white;">
-						<img src="assets/filter-stats.jpg" width="100%">
-					</div>
-					<div class="container horizontal-2">
-						<div class="frame" style="background-color: steelblue;">
-							<img src="assets/cover-hyprrun.png" style="height: auto; width: auto; max-width: 300px;">
-						</div>
-						<div class="container vertical">
-							<div class="frame" style="background-color: magenta;">
-								<img src="assets/Frame 28321.png" style="height: auto; width: auto; max-width: 300px; max-height: 240px;">
-							</div>
-							<div class="frame" style="background-color: mediumslateblue;">
-								<img src="assets/Frame 28321.png" style="height: auto; width: auto; max-width: 240px; max-height: 240px;">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<main>
+		<input type=checkbox id=filter-Me name=filter-Me checked>
+		<label for=filter-Me>Me</label>
+		<input type=checkbox id=filter-Quilt name=filter-Quilt checked>
+		<label for=filter-Quilt>Quilt</label>
+		<input type=checkbox id=filter-Dev name=filter-Dev checked>
+		<label for=filter-Dev>Dev</label>
+		<input type=checkbox id=filter-Other name=filter-Other checked>
+		<label for=filter-Other>Other</label>
+
+		<table id="index">
+			<tbody>
+				<tr data-type-primary=Me>
+					<td>Katie Lin is a product designer and engineer</td>
+					<td>I'm interested in alternative models of education, non-games and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.</td>
+				</tr>
+				<tr data-type-primary=Other>
+					<td>Which 'Ratatouille' character are you?</td>
+					<td style="display: flex; flex-direction: row; flex: 0 1 200px; gap: 1em;"><img src=assets/filter-demo.png style="max-height: 400px;"><img src=assets/filter-stats.jpg style="max-height: 150px;"></td>
+				</tr>
+				<tr data-type-primary=Quilt>
+					<td>Quilt was an audio social network focused on self-care.</td>
+					<td>It began as a community platform that facilitated IRL conversations. Quilt's 1.0 audio app was a direct response to the COVID-19 pandemic. I joined Quilt in October 2020 as a product marketer focused on GTM strategy. As with many startups, I wore several hats, and within 2 months, I ended up working as a full-fledged product designer.</td>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 </body>
 </html>

@@ -8,6 +8,44 @@ html, body {
     width: 100%;
 }
 
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+header {
+    margin: 16px 32px;
+}
+
+.two-cols {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+span#name {
+    text-transform: uppercase;
+	font-size: 1.4rem;
+	font-stretch: 125%;
+	font-weight: 800;
+}
+
+header p {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 0px;
+	font-style: italic;
+}
+
+header div.right {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	gap: 2px;
+}
+
 main {
     margin: 16px 32px;
 }

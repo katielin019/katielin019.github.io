@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Lin</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        /* main {
+            margin: 40px 120px;
+        } */
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 100% 0%;
+            /* transform-origin: top center; */
+        }
+
+        div.frame {
+            display: inline-block;
+            border: 1px white solid;
+            width: 240px;
+            height: 240px;
+            padding: 64px 16px 0;
+            overflow: hidden;
+            /* position: relative; */
+        }
+
+        #zoom img {
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            animation-name: zoom-in;
+        }
+
+        #zoom:hover img {
+            /* animation-name: on-hover;
+            animation-duration: 1.2s;
+            animation-fill-mode: forwards; */
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-name: zoom-out;
+        }
+
+        @keyframes zoom-out {
+            0% {
+                transform: scale(1) translateY(0);
+                height: auto;
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(0.7) translateY(-180px);
+                height: auto;
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoom-in {
+            0% {
+                transform: scale(0.7) translateY(-180px);
+                height: auto;
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1) translateY(0);
+                height: auto;
+                opacity: 1;
+            }
+        }
+
+
+        /* @keyframes on-hover {
+            0% {
+                opacity: 0.7;
+                height: auto;
+            }
+            100% {
+                transform: scale(0.7) translateY(-180px);
+                width: 240px;
+                height: auto;
+            }
+        } */
+
+        .title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            /* text-transform: uppercase; */
+            color: silver;
+        }
+
+        /* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
+		.parent {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			/* gap: 16px; */
+			height: 100vh;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.child {
+			padding: 16px 32px;
+		}
+
+		.left {
+			background-color: rgb(40, 40, 40);
+			min-width: 18.5rem;
+		}
+
+		.right {
+			/* background-color: darkslategrey; */
+			overflow-y: scroll;
+            width: 100%;
+            /* margin: 0 auto; */
+		}
+
+        .container {
+            margin: 0 auto;
+        }
+
+		@media only screen and (min-width: 0px) and (max-width: 768px) {
+			.parent {
+				display: block;
+			}
+		}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class=parent>
+			<div class="child left">
+				<h1>blah blah blah</h1>
+				<ol class="toc">
+					<li>Some project name</li>
+					<li>Some project name</li>
+					<li>Some project name</li>
+					<li>Some project name</li>
+					<li>Some project name</li>
+					<li>Some project name</li>
+				</ol>
+			</div>
+			<div class="child right">
+				<div class="container">
+                    <div id=zoom class=frame>
+                        <img src="assets/hyprrun/thumbnail.png">
+                    </div>
+                    <br><br>
+                    <div class=frame>
+                        <div class="title">HyprRun</div>
+                        <div class="subtitle">Building a product from 0 to 1</div>
+                    </div>
+                    <br><br>
+                    <div class=frame>
+                        <div class="title">Start a Quilt flow</div>
+                        <div class="subtitle">Redesigning a core feature</div>
+                    </div>
+                    <br><br>
+                    <div class=frame>
+                        <div class="title">Title Prompts</div>
+                        <div class="subtitle">Creating serendipity & driving engagement</div>
+                    </div>
+                    <br><br>
+                </div>
+			</div>
+		</div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

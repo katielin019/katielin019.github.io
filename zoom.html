@@ -29,6 +29,13 @@
             /* transform-origin: top center; */
         }
 
+        /* img.reg {
+            height: auto;
+            width: 100%;
+            object-fit: contain;
+            transform-origin: bottom center;
+        } */
+
         div.frame {
             display: inline-block;
             border: 1px white solid;
@@ -39,8 +46,46 @@
             /* position: relative; */
         }
 
+        #slide img {
+            animation-duration: 0.15s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            animation-name: slide-down;
+        }
+
+        #slide:hover img {
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-name: slide-up;
+        }
+
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-32px);
+                height: auto;
+            }
+
+            100% {
+                transform: translateY(16px);
+                height: auto;
+            }
+        }
+
+        @keyframes slide-up {
+            0% {
+                transform: translateY(16px);
+                height: auto;
+            }
+
+            100% {
+                transform: translateY(-32px);
+                height: auto;
+            }
+        }
+
         #zoom img {
-            animation-duration: 0.4s;
+            animation-duration: 0.25s;
             animation-fill-mode: forwards;
             animation-timing-function: ease-out;
             animation-name: zoom-in;
@@ -50,7 +95,7 @@
             /* animation-name: on-hover;
             animation-duration: 1.2s;
             animation-fill-mode: forwards; */
-            animation-duration: 0.6s;
+            animation-duration: 0.4s;
             animation-fill-mode: forwards;
             animation-timing-function: ease-in;
             animation-name: zoom-out;
@@ -84,19 +129,6 @@
             }
         }
 
-
-        /* @keyframes on-hover {
-            0% {
-                opacity: 0.7;
-                height: auto;
-            }
-            100% {
-                transform: scale(0.7) translateY(-180px);
-                width: 240px;
-                height: auto;
-            }
-        } */
-
         .title {
             font-size: 1.4rem;
             font-weight: 600;
@@ -114,23 +146,30 @@
 
 <body>
     <main>
-        <div id=zoom class=frame>
-            <img src="assets/hyprrun/thumbnail.png">
-        </div>
-        <br><br>
         <div class=frame>
             <div class="title">HyprRun</div>
             <div class="subtitle">Building a product from 0 to 1</div>
         </div>
+        <div id=zoom class=frame>
+            <img src="assets/hyprrun/thumbnail.png">
+        </div>
+        
         <br><br>
+
         <div class=frame>
             <div class="title">Start a Quilt flow</div>
             <div class="subtitle">Redesigning a core feature</div>
         </div>
+
         <br><br>
+
         <div class=frame>
             <div class="title">Title Prompts</div>
             <div class="subtitle">Creating serendipity & driving engagement</div>
+        </div>
+        <div class="frame" id="slide">
+            <img src="assets/prompts/frame-1.png">
+            <!-- <img class=reg src="assets/prompts/thumbnail.png"> -->
         </div>
         <br><br>
     </main>

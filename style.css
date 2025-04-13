@@ -19,31 +19,27 @@ header {
     margin: 16px 32px;
 }
 
-.two-cols {
+header.two-cols {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+    gap: 2.4em;
 }
 
-span#name {
+header span {
+    font-stretch: 125%;
+}
+
+header span#name {
     text-transform: uppercase;
 	font-size: 1.4rem;
 	font-stretch: 125%;
 	font-weight: 800;
 }
 
-header p {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 0px;
-	font-style: italic;
-}
-
 header div.right {
 	display: flex;
-	flex-direction: column;
-	text-align: right;
-	gap: 2px;
+    align-items: center;
+    gap: 2.4em;
 }
 
 main {

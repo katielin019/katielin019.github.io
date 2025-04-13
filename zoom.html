@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katie Lin</title>
-	<style>
-        html, body {
+    <style>
+        html,
+        body {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -36,17 +38,52 @@
         }
 
         #zoom img {
-            transition: transform 0.4s ease, opacity 0.4s ease;
-            transform-origin: top center;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            animation-name: zoom-in;
         }
 
         #zoom:hover img {
-            animation-name: on-hover;
+            /* animation-name: on-hover;
             animation-duration: 1.2s;
+            animation-fill-mode: forwards; */
+            animation-duration: 0.6s;
             animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            animation-name: zoom-out;
         }
 
-        @keyframes on-hover {
+        @keyframes zoom-out {
+            0% {
+                transform: scale(1) translateY(0);
+                height: auto;
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(0.7) translateY(-180px);
+                height: auto;
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoom-in {
+            0% {
+                transform: scale(0.7) translateY(-180px);
+                height: auto;
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1) translateY(0);
+                height: auto;
+                opacity: 1;
+            }
+        }
+
+
+        /* @keyframes on-hover {
             0% {
                 opacity: 0.7;
                 height: auto;
@@ -56,21 +93,22 @@
                 width: 240px;
                 height: auto;
             }
-        }
-	</style>
+        } */
+    </style>
 </head>
+
 <body>
-	<main>
+    <main>
         <div id=zoom>
             <img src="assets/hyprrun/thumbnail.png">
         </div>
         <br>
         <br>
         <div>
-            <img src="assets/hyprrun/thumbnail.png" style="object-fit: contain;">
         </div>
-	</main>
-	<footer>
-	</footer>
+    </main>
+    <footer>
+    </footer>
 </body>
+
 </html>

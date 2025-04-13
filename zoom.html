@@ -31,11 +31,13 @@
             width: 240px;
             height: 240px;
             padding: 64px 16px 0;
+            overflow: hidden;
+            /* position: relative; */
         }
 
         #zoom:hover img {
             animation-name: on-hover;
-            animation-duration: 1.4s;
+            animation-duration: 1.2s;
             animation-fill-mode: forwards;
         }
 
@@ -43,12 +45,13 @@
             0% {
                 opacity: 0.7;
                 height: auto;
+                clip-path: inset(0);
             }
             100% {
                 transform: scale(0.75) translateY(-120px);
                 width: 240px;
                 height: auto;
-                object-fit: cover;
+                clip-path: inset(0);
             }
         }
 	</style>

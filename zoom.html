@@ -20,9 +20,9 @@
         img {
             height: 100%;
             width: 100%;
-            /* height: auto; */
-            /* width: auto; */
-            /* max-width: 100%; */
+            object-fit: cover;
+            object-position: 100% 0%;
+            /* transform-origin: top center; */
         }
 
         div {
@@ -35,6 +35,11 @@
             /* position: relative; */
         }
 
+        #zoom img {
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            transform-origin: top center;
+        }
+
         #zoom:hover img {
             animation-name: on-hover;
             animation-duration: 1.2s;
@@ -45,13 +50,11 @@
             0% {
                 opacity: 0.7;
                 height: auto;
-                clip-path: inset(0);
             }
             100% {
-                transform: scale(0.75) translateY(-120px);
+                transform: scale(0.7) translateY(-180px);
                 width: 240px;
                 height: auto;
-                clip-path: inset(0);
             }
         }
 	</style>
@@ -59,7 +62,7 @@
 <body>
 	<main>
         <div id=zoom>
-            <img src="assets/hyprrun/thumbnail.png" style="object-fit: cover; object-position: 100% 0%;">
+            <img src="assets/hyprrun/thumbnail.png">
         </div>
         <br>
         <br>

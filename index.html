@@ -64,6 +64,20 @@
 				column-gap: 16px;
 			}
 		}
+
+		.zoom {
+			transition: transform .2s;
+		}
+
+		.zoom img {
+			transform: scale(1.5);
+			width: 200px;
+			height: auto;
+		}
+		
+		.zoom:hover img {
+			transform: scale(1);
+		}
 	</style>
 </head>
 <body>
@@ -84,19 +98,14 @@
 				<h1>blah blah blah</h1>
 				<ol class="work">
 					<li>
-						<img src="assets/prompts-thumb.png">
+						<img src="assets/prompts/thumbnail.png">
+					</li>
+					<li class="zoom">
+						<!-- <img class=zoom src="assets/saqf/thumbnail.png"> -->
+						 <img src="assets/saqf/full.png">
 					</li>
 					<li>
-						<img src="assets/iPhone 14 Plus-2.png">
-					</li>
-					<li>
-						<img src="assets/thumb-saqf.png">
-					</li>
-					<li>
-						<img src="assets/exploration-1.png">
-					</li>
-					<li>
-						<img src="assets/stations-analysis.png">
+						<img src="assets/hyprrun/iPhone 14 Plus-2.png">
 					</li>
 				</ol>
 			</div>

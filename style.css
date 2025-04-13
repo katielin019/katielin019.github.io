@@ -20,3 +20,9 @@ ol.work {
     margin: 0;
     padding: 0;
 }
+
+ol.work li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

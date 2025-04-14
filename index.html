@@ -1,91 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
     <title>Katie Lin</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		/* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
-		.parent {
-			display: grid;
-			grid-template-columns: 1fr 3fr;
-			/* gap: 16px; */
-			height: 100vh;
-		}
-
-		h1 {
-			margin: 0;
-		}
-
-		.child {
-			padding: 16px 32px;
-		}
-
-		.left {
-			background-color: rgb(40, 40, 40);
-			min-width: 18.5rem;
-		}
-
-		.right {
-			/* background-color: darkslategrey; */
-			overflow-y: scroll;
-		}
-
-		ol.work {
-			column-count: 3;
-		}
-
-		@media only screen and (min-width: 768px) and (max-width: 992px) {
-			ol.work {
-				column-count: 1;
-			}
-		}
-
-		@media only screen and (min-width: 992px) and (max-width: 1200px) {
-			ol.work {
-				column-count: 2;
-			}
-		}
-
-		@media only screen and (min-width: 0px) and (max-width: 768px) {
-			.parent {
-				display: block;
-			}
-
-			/* .left {
-				position: sticky;
-				top: 0;
-				width: 100vw;
-			} */
-
-			ol.toc {
-				column-count: 2;
-				column-gap: 16px;
-			}
-		}
-
-		.zoom {
-			transition: transform .2s;
-		}
-
-		.zoom img {
-			transform: scale(1.5);
-			width: 200px;
-			height: auto;
-		}
-		
-		.zoom:hover img {
-			transform: scale(1);
-		}
-	</style>
-</head>
+	<link rel=stylesheet type=text/css href=style.css>
 <body>
 	<main>
 		<div class=parent>
 			<div class="child left">
 				<h1>blah blah blah</h1>
-				<ol class="toc">
+				<ol class=toc>
 					<li>Some project name</li>
 					<li>Some project name</li>
 					<li>Some project name</li>
@@ -96,18 +21,16 @@
 			</div>
 			<div class="child right">
 				<h1>blah blah blah</h1>
-				<ol class="work">
-					<li>
-						<img src="assets/prompts/thumbnail.png">
-					</li>
-					<li class="zoom">
-						<!-- <img class=zoom src="assets/saqf/thumbnail.png"> -->
-						 <img src="assets/saqf/full.png">
-					</li>
-					<li>
-						<img src="assets/hyprrun/iPhone 14 Plus-2.png">
-					</li>
-				</ol>
+				<div class=container>
+					<div class=column>
+						<div id=zoom class=frame><img src=assets/hyprrun/thumbnail.png></div>
+						<div id=slide class=slide-frame><img src=assets/prompts/frame-1.png></div>
+					</div>
+					<div id=overlay class=overlay-frame>
+						<img src=assets/saqf/frame-1.png class=before>
+						<img src=assets/saqf/frame-2.png class=after>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

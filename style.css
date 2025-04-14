@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     background-color: black;
@@ -8,22 +9,180 @@ html, body {
     width: 100%;
 }
 
-img {
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    /* max-height: 360px; */
+h1 {
+    margin: 0;
 }
 
-ol.work {
-    list-style-type: none;
-    margin: 0;
+/* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.child {
+    padding: 16px 32px;
+}
+
+.left {
+    background-color: rgb(40, 40, 40);
+    min-width: 18.5rem;
+}
+
+.right {
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .parent {
+        display: block;
+    }
+}
+
+div.container {
+    margin-top: 16px;
+    display: grid;
+    /* gap: 40px; */
+    grid-template-columns: 1fr 1fr;
+}
+
+div.column {
+    column-count: 1;
+}
+
+div.frame {
+    display: inline-block;
+    border: 1px white solid;
+    width: 260px;
+    height: 260px;
+    padding: 64px 16px 0;
+    overflow: hidden;
+}
+
+div.slide-frame {
+    display: inline-block;
+    border: 1px white solid;
+    width: 240px;
+    height: 240px;
+    padding: 64px 16px 0;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+
+#zoom img {
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-name: zoom-in;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.7) translateY(-190px);
+        height: auto;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        height: auto;
+        opacity: 1;
+    }
+}
+
+#zoom:hover img {
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-name: zoom-out;
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1) translateY(0);
+        height: auto;
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(0.7) translateY(-190px);
+        height: auto;
+        opacity: 1;
+    }
+}
+
+#slide img {
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-name: slide-down;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-32px);
+        height: auto;
+    }
+
+    100% {
+        transform: translateY(16px);
+        height: auto;
+    }
+}
+
+#slide:hover img {
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-name: slide-up;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(16px);
+        height: auto;
+    }
+
+    100% {
+        transform: translateY(-32px);
+        height: auto;
+    }
+}
+
+div.overlay-frame {
+    display: inline-block;
+    border: 1px white solid;
+    width: 260px;
+    height: 495px;
+    overflow: hidden;
+    position: relative;
+}
+
+#overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    object-fit: cover;
     padding: 16px;
 }
 
-ol.work li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 32px;
+.before {
+    z-index: 1;
+}
+
+.after {
+    z-index: 2;
+    transform: translateY(100%);
+}
+
+#overlay:hover .after {
+    transform: translateY(0);
 }

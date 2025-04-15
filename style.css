@@ -17,26 +17,6 @@ a.self:visited {
     color: cornflowerblue;
 }
 
-/* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
-.parent {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 100vh;
-}
-
-.child {
-    padding: 16px 32px;
-}
-
-.left {
-    background-color: rgb(40, 40, 40);
-    min-width: 18.5rem;
-}
-
-.right {
-    overflow-y: scroll;
-}
-
 div.about {
     margin-top: 1.5rem;
     margin-bottom: 4rem;

@@ -9,8 +9,12 @@ body {
     width: 100%;
 }
 
-h1 {
-    margin: 0;
+a {
+    color: orange;
+}
+
+a:visited {
+    color: darkorange;
 }
 
 /* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
@@ -31,6 +35,23 @@ h1 {
 
 .right {
     overflow-y: scroll;
+}
+
+div.about {
+    margin-bottom: 4rem;
+}
+
+ol.toc li {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+ol.toc li div.subtitle {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.15rem;
+    margin-top: 4px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {

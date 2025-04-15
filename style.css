@@ -41,13 +41,11 @@ h1 {
 
 div.container {
     margin-top: 16px;
-    display: grid;
-    /* gap: 40px; */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
-div.column {
-    column-count: 1;
+div.container > section {
+    margin: 32px auto;
 }
 
 div.frame {
@@ -55,22 +53,13 @@ div.frame {
     border: 1px white solid;
     width: 260px;
     height: 260px;
-    padding: 64px 16px 0;
+    padding: 64px 0 0 16px;
     overflow: hidden;
 }
 
-div.slide-frame {
-    display: inline-block;
-    border: 1px white solid;
-    width: 240px;
-    height: 240px;
-    padding: 64px 16px 0;
-    overflow: hidden;
-}
-
-img {
-    height: 100%;
-    width: 100%;
+div.frame > img {
+    height: auto;
+    width: calc(100% - 16px);
     object-fit: cover;
     object-position: 100% 0%;
 }
@@ -158,7 +147,7 @@ img {
 div.overlay-frame {
     display: inline-block;
     border: 1px white solid;
-    width: 260px;
+    width: 276px;
     height: 495px;
     overflow: hidden;
     position: relative;

@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
-    <meta charset=UTF-8>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title>Katie Lin</title>
+	<meta charset=UTF-8>
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+	<title>Katie Lin</title>
 	<link rel=stylesheet type=text/css href=style.css>
+	<link rel=stylesheet type=text/css href=animation.css>
 <body>
 	<main>
 		<div class=parent>
 			<div class="child left">
-				<div class="about">
+				<div class=about>
 					Katie Lin is a product designer and engineer.<br><br>
-					I'm interested in alternative models of education, non-games and sandbox environments, social models of computing, design systems, the history of technology, and personal canons.<br><br>
-					Links... <a href="mailto:celin@alumni.cmu.edu">Email</a>, <a href="https://bsky.app/profile/positional.space">Bsky</a>, <a href="https://github.com/katielin019">GitHub</a>.
+					I'm interested in alternative models of education, non-games and sandbox environments, social models
+					of computing, design systems, the history of technology, and personal canons.<br><br>
+					Links... <a class=self href=mailto:celin@alumni.cmu.edu>Email</a>, <a class=self
+						href=https://bsky.app/profile/positional.space>Bsky</a>, <a class=self
+						href=https://github.com/katielin019>GitHub</a>.
 				</div>
 				<ol class=toc>
-					<li>HyprRun<br><div class="subtitle">Building a product from 0 to 1</div></li>
-					<li>Start a Quilt flow<br><div class="subtitle">Redesigning a core feature</div></li>
-					<li>Title Prompts<br><div class="subtitle">Creating serendipity + driving engagement</div></li>
-					<li>User Settings > Interests<br><div class="subtitle">Laying a data-driven foundation</div></li>
-					<li>Master Reference Doc<br><div class="subtitle">Documenting design changes for internal consistency</div></li>
+					<li class=toc-item data-project=hyprrun>
+						<a href=index.html>
+							<p class=title>HyprRun</p><br>
+							<p class=subtitle>Building a product from 0 to 1</p>
+						</a>
+					</li>
+					<li class=toc-item data-project=saqf>
+						<a href=index.html>
+							<p class=title>Start a Quilt flow</p><br>
+							<p class=subtitle>Redesigning a core feature</p>
+						</a>
+					</li>
+					<li class=toc-item data-project=prompts>
+						<a href=index.html>
+							<p class=title>Title Prompts</p><br>
+							<p class=subtitle>Creating serendipity + driving engagement</p>
+						</a>
+					</li>
+					<li class=toc-item data-project=interests>
+						<a href=index.hmtl>
+							<p class=title>User Settings > Interest</p><br>
+							<p class=subtitle>Laying a data-driven product foundation</p>
+						</a>
+					</li>
+					<li class=toc-item data-project=refdoc>
+						<a href=index.html>
+							<p class=title>Master Reference Doc</p><br>
+							<p class=subtitle>Documenting design changes for internal consistency</p>
+						</a>
+					</li>
 				</ol>
 			</div>
 			<div class="child right">
 				<div class=container>
-					<section>
-						<div id=zoom class=frame><img src=assets/hyprrun/thumbnail.png></div>
-					</section>
-					<section>
-						<div id=slide class=frame><img src=assets/prompts/frame-1.png></div>
-					</section>
-					<section>
-						<div id=overlay class=overlay-frame>
-							<img src=assets/saqf/frame-1.png class=before>
-							<img src=assets/saqf/frame-2.png class=after>
-						</div>
-					</section>
+					<div id=zoom class=frame data-project=hyprrun>
+						<a class=frame href=index.html>
+							<!-- <img src=assets/hyprrun/thumbnail.png> -->
+						</a>
+					</div>
+					<div id=slide class=frame data-project=prompts>
+						<a class=frame href=index.html>
+							<!-- <img src=assets/prompts/frame-1.png> -->
+						</a>
+					</div>
+					<div id=overlay class="frame overlay-frame" data-project=saqf>
+						<a class=frame href=index.html>
+							<!-- <img src=assets/saqf/frame-1.png class=before> -->
+							<!-- <img src=assets/saqf/frame-2.png class=after> -->
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

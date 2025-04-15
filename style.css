@@ -9,23 +9,12 @@ body {
     width: 100%;
 }
 
-a {
+a.self {
     color: deepskyblue;
-    text-decoration: none;
 }
 
-a:hover {
-    color: white;
-    background-color: deepskyblue;
-}
-
-a:visited {
+a.self:visited {
     color: cornflowerblue;
-}
-
-a:visited:hover {
-    color: white;
-    background-color: cornflowerblue;
 }
 
 /* https://www.joshwcomeau.com/css/interactive-guide-to-grid/ */
@@ -53,17 +42,30 @@ div.about {
     margin-bottom: 4rem;
 }
 
-ol.toc li {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 16px;
+.toc-item {
+    margin-bottom: 1.2rem;
 }
 
-ol.toc li div.subtitle {
-    font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 1.15rem;
-    margin-top: 4px;
+.toc-item p {
+    font-weight: normal;
+    margin: 0;
+    display: inline;
+}
+
+.toc-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.toc-item p.subtitle, a::before {
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.01rem;
+}
+
+a.hover::before, .toc-item.selected a::before {
+    color: blue;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -77,7 +79,7 @@ div.container {
     grid-template-columns: 1fr;
 }
 
-div.container > section {
+div.container div.frame {
     margin: 32px auto;
 }
 
@@ -90,121 +92,30 @@ div.frame {
     overflow: hidden;
 }
 
-div.frame > img {
+div.frame img {
     height: auto;
     width: calc(100% - 16px);
     object-fit: cover;
     object-position: 100% 0%;
 }
 
-#zoom img {
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-name: zoom-in;
+.container {
+    counter-reset: frames;
 }
 
-@keyframes zoom-in {
-    0% {
-        transform: scale(0.7) translateY(-190px);
-        height: auto;
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1) translateY(0);
-        height: auto;
-        opacity: 1;
-    }
+a.frame {
+    counter-increment: frames;
 }
 
-#zoom:hover img {
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-name: zoom-out;
-}
-
-@keyframes zoom-out {
-    0% {
-        transform: scale(1) translateY(0);
-        height: auto;
-        opacity: 0.7;
-    }
-
-    100% {
-        transform: scale(0.7) translateY(-190px);
-        height: auto;
-        opacity: 1;
-    }
-}
-
-#slide img {
-    animation-duration: 0.15s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-name: slide-down;
-}
-
-@keyframes slide-down {
-    0% {
-        transform: translateY(-32px);
-        height: auto;
-    }
-
-    100% {
-        transform: translateY(16px);
-        height: auto;
-    }
-}
-
-#slide:hover img {
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    animation-name: slide-up;
-}
-
-@keyframes slide-up {
-    0% {
-        transform: translateY(16px);
-        height: auto;
-    }
-
-    100% {
-        transform: translateY(-32px);
-        height: auto;
-    }
-}
-
-div.overlay-frame {
-    display: inline-block;
-    border: 1px white solid;
-    width: 276px;
-    height: 495px;
-    overflow: hidden;
-    position: relative;
-}
-
-#overlay img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: calc(100% - 32px);
-    height: calc(100% - 32px);
-    object-fit: cover;
-    padding: 16px;
-}
-
-.before {
-    z-index: 1;
-}
-
-.after {
-    z-index: 2;
-    transform: translateY(100%);
-}
-
-#overlay:hover .after {
-    transform: translateY(0);
+.frame a::after {
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    color: orange;
+    z-index: 0;
+    letter-spacing: -0.01rem;
+    width: 1.5rem;
+    content: counter(frames);
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
 }

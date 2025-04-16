@@ -27,22 +27,6 @@ section.work {
     overflow-x: scroll;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-    main {
-        display: block;
-    }
-
-    section.work {
-        /* grid-template-columns: 1fr; */
-        white-space: wrap;
-        overflow-y: scroll;
-    }
-
-    .fixed {
-        visibility: hidden;
-    }
-}
-
 ol {
     padding-left: 20px;
 }
@@ -69,6 +53,35 @@ hgroup p {
     font-size: 0.9rem;
     font-weight: 200;
     letter-spacing: 0.025rem;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* hgroup h2 {
+        margin: 0;
+    } */
+
+    hgroup p {
+        max-width: 80%;
+    }
+
+    section.work {
+        /* grid-template-columns: 1fr; */
+        white-space: wrap;
+        overflow-y: scroll;
+    }
+
+    .fixed {
+        visibility: hidden;
+    }
 }
 
 div.frame {

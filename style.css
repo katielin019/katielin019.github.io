@@ -11,91 +11,13 @@ body {
 
 a.self {
     color: deepskyblue;
+    text-decoration: none;
 }
 
 a.self:visited {
     color: cornflowerblue;
 }
 
-div.about {
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
-}
-
-.toc-item {
-    margin-bottom: 1.2rem;
-}
-
-.toc-item p {
-    font-weight: normal;
-    margin: 0;
-    display: inline;
-}
-
-.toc-item a {
-    color: white;
-    text-decoration: none;
-}
-
-.toc-item p.subtitle, a::before {
-    font-family: sans-serif;
-    font-size: 0.75rem;
-    line-height: 0.9rem;
-    letter-spacing: 0.01rem;
-}
-
-a.hover::before, .toc-item.selected a::before {
-    color: blue;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 768px) {
-    .parent {
-        display: block;
-    }
-}
-
-div.container {
-    margin-top: 16px;
-    grid-template-columns: 1fr;
-}
-
-div.container div.frame {
-    margin: 32px auto;
-}
-
-div.frame {
-    display: inline-block;
-    border: 1px white solid;
-    width: 260px;
-    height: 260px;
-    padding: 64px 0 0 16px;
-    overflow: hidden;
-}
-
-div.frame img {
-    height: auto;
-    width: calc(100% - 16px);
-    object-fit: cover;
-    object-position: 100% 0%;
-}
-
-.container {
-    counter-reset: frames;
-}
-
-a.frame {
-    counter-increment: frames;
-}
-
-.frame a::after {
-    font-family: sans-serif;
-    font-size: 0.75rem;
-    color: orange;
-    z-index: 0;
-    letter-spacing: -0.01rem;
-    width: 1.5rem;
-    content: counter(frames);
-    /* display: flex;
-    justify-content: center; */
-    margin: 0 auto;
+a.self:hover {
+    text-decoration: underline;
 }

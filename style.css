@@ -45,9 +45,3 @@ a.nav:hover {
 label.fixed {
     left: calc(1.25rem + 28px);
 }
-
-#scroll-dir:checked ~ section.work {
-    /* background-color: red; */
-    white-space: wrap;
-    overflow-y: scroll;
-}

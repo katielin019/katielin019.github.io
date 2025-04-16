@@ -55,6 +55,12 @@ hgroup p {
     letter-spacing: 0.025rem;
 }
 
+#scroll-dir:checked ~ section.work {
+    /* background-color: red; */
+    white-space: wrap;
+    overflow-y: scroll;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     main {
         display: block;
@@ -95,15 +101,6 @@ div.frame {
     height: 260px;
     padding: 64px 0 0 16px;
     overflow: hidden;
-}
-
-div.hug-contents {
-    height: auto;
-    padding: 8px;
-}
-
-div.hug-contents img {
-    width: 100%;
 }
 
 div.frame img {

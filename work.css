@@ -18,11 +18,14 @@ div.about {
     margin-bottom: 4rem;
 }
 
+div.about p a {
+    color: steelblue;
+}
+
 section.work {
     margin-top: 16px;
     white-space: nowrap;
     overflow-x: scroll;
-    vertical-align: top;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -46,10 +49,20 @@ section.work {
 
 div.box {
     display: inline-block;
+    vertical-align: top;
     border: 1.5px white dashed;
     width: 250px;
     height: auto;
     padding: 8px;
+}
+
+div.box img + p {
+    margin-top: 16px;
+}
+
+div.box p {
+    white-space: wrap;
+    margin: 0;
 }
 
 div.box img {

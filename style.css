@@ -9,17 +9,31 @@ body {
     width: 100%;
 }
 
-a.self {
+a {
     color: deepskyblue;
     text-decoration: none;
 }
 
-a.self:visited {
+a.nav, a:visited {
     color: mediumslateblue;
 }
 
-a.self:hover {
+a:hover {
     text-decoration: underline;
+}
+
+
+a.nav {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-stretch: 150%;
+}
+
+a.nav:hover {
+    color: rgb(40, 40, 40);
+    background-color: mediumslateblue;
+    text-decoration: none;
 }
 
 .fixed {

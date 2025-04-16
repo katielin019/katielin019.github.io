@@ -97,11 +97,22 @@ div.frame {
     overflow: hidden;
 }
 
+div.hug-contents {
+    height: auto;
+    padding: 8px;
+}
+
+div.hug-contents img {
+    width: 100%;
+}
+
 div.frame img {
     height: auto;
     width: calc(100% - 16px);
     object-fit: cover;
     object-position: 100% 0%;
+    display: block;
+    margin: auto;
 }
 
 .work {

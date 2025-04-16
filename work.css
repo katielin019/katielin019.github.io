@@ -77,6 +77,11 @@ div.box + div.box {
     margin-left: 16px;
 }
 
+div.box {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
 #scroll-dir:checked ~ section.work {
     white-space: wrap;
     overflow-y: scroll;

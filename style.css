@@ -68,8 +68,11 @@ div.frame {
     border: 1px white solid;
     width: 260px;
     height: 260px;
-    padding: 64px 0 0 16px;
     overflow: hidden;
+}
+
+div.frame-reg {
+    padding: 64px 0 0 16px;
 }
 
 div.frame img {
@@ -79,7 +82,7 @@ div.frame img {
     object-position: 100% 0%;
 }
 
-.container {
+section.work {
     counter-reset: frames;
 }
 

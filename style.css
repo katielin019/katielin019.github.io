@@ -49,5 +49,7 @@ label.fixed {
 }
 
 #scroll-dir:checked ~ section.work {
-    background-color: red;
+    /* background-color: red; */
+    white-space: wrap;
+    overflow-y: scroll;
 }

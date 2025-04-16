@@ -32,10 +32,14 @@ section.work {
         display: block;
     }
 
-    div.container {
+    section.work {
         /* grid-template-columns: 1fr; */
         white-space: wrap;
         overflow-y: scroll;
+    }
+
+    .fixed {
+        visibility: hidden;
     }
 }
 

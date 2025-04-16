@@ -8,6 +8,15 @@
 	<link rel=stylesheet type=text/css href=layout.css>
 	<link rel=stylesheet type=text/css href=style.css>
 	<link rel=stylesheet type=text/css href=animation.css>
+	<style>
+		* {
+			color: silver;
+		}
+
+		li.focused, .focused * {
+			color: white;
+		}
+	</style>
 </head>
 <body>
 	<main>
@@ -30,7 +39,7 @@
 						</a>
 					</hgroup>
 				</li>
-				<li data-project=saqf>
+				<li class=focused data-project=saqf>
 					<hgroup>
 						<a href=index-saqf.html>
 							<h2>Start a Quilt flow</h2>

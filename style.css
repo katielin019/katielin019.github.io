@@ -22,7 +22,7 @@ a.self:hover {
     text-decoration: underline;
 }
 
-aside {
+.fixed {
     position: fixed;
     bottom: 0.75em;
     left: 1.25em;
@@ -44,9 +44,10 @@ aside {
     column-gap: 0.5em;
 }
 
+label.fixed {
+    left: calc(1.25em + 24px);
+}
+
 #scroll-dir:checked ~ section.work {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* white-space: wrap;
-    overflow-y: scroll; */
+    background-color: red;
 }

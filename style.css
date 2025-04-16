@@ -45,3 +45,31 @@ a.nav:hover {
 label.fixed {
     left: calc(1.25rem + 28px);
 }
+
+hgroup a, hgroup a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+hgroup a:hover {
+    text-decoration: none;
+}
+
+hgroup a:hover h2 {
+    /* color: deepskyblue; */
+    text-decoration: underline;
+}
+
+hgroup h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+}
+
+hgroup p {
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 0.025rem;
+}

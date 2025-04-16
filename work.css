@@ -22,20 +22,7 @@ section.work {
     margin-top: 16px;
     white-space: nowrap;
     overflow-x: scroll;
-}
-
-hgroup h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding-bottom: 4px;
-    margin-bottom: 0;
-}
-
-hgroup p {
-    margin-top: 0;
-    font-size: 0.9rem;
-    font-weight: 200;
-    letter-spacing: 0.025rem;
+    vertical-align: top;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -73,13 +60,8 @@ div.box img {
     margin: auto;
 }
 
-div.box + div.box {
-    margin-left: 16px;
-}
-
 div.box {
     margin-right: 16px;
-    margin-bottom: 16px;
 }
 
 #scroll-dir:checked ~ section.work {
@@ -87,6 +69,6 @@ div.box {
     overflow-y: scroll;
 }
 
-#scroll-dir:checked ~ section.work div.box + div.box {
-    margin-left: 0px;
+#scroll-dir:checked ~ section.work div.box {
+    margin-bottom: 16px;
 }

@@ -32,8 +32,7 @@ section.work {
         display: block;
     }
 
-    section.work {
-        margin-top: 16px;
+    div.container {
         /* grid-template-columns: 1fr; */
         white-space: wrap;
         overflow-y: scroll;

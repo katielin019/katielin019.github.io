@@ -15,6 +15,29 @@
             background-color: silver;
             color: black
         }
+
+        hgroup {
+            display: flex;
+            flex-direction: row;
+        }
+
+        hgroup h2 {
+            font-size: 1.5rem;
+        }
+
+        hgroup div p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: 200;
+            letter-spacing: 0.025rem;
+        }
+
+        hgroup p.date {
+            text-transform: uppercase;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
@@ -24,10 +47,11 @@
                 <a class=nav href=../index.html>Katie Lin</a>
 				<hgroup>
                     <h2>HyprRun</h2>
-                    <p>Building a product from 0 to 1</p>
                     <!-- TODO: format/fix layout for date -->
-                    <p>Fall 2022</p>
-                    <p>with Zahir Saiyed and Emily Ngo</p>
+                     <div class="right">
+                        <p class="date">Fall 2022</p>
+                        <p class="team">with Zahir Saiyed and Emily Ngo</p>
+                     </div>
                 </hgroup>
                 <hr>
                 <p>HyprRun is a mobile app built to be your personal running companion. As you run, the app queues up the best tracks to match your current 'vibe' and your individual music taste.</p>

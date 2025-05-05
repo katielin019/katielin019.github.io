@@ -18,12 +18,13 @@ body {
 header {
     padding-inline-start: 16px;
     height: 5em;
-    background-color: yellow;
-    color: black;
+    background-color: orangered;
+/*    background-color: yellow;*/
+/*    color: black;*/
 }
 
 header > *:not(p) {
-    color: black;
+/*    color: black;*/
 /*    color: mediumslateblue;*/
     margin-inline-end: 10px;
 }

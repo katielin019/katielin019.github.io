@@ -16,51 +16,25 @@ body {
 }
 
 header {
-    margin: 16px 32px;
+    padding-inline-start: 16px;
+    height: 5em;
+    background-color: yellow;
+    color: black;
 }
 
-header.two-cols {
-	display: flex;
-	flex-direction: row;
-    gap: 2.4em;
-}
-
-header span {
-    font-stretch: 125%;
-}
-
-header span#name {
-    text-transform: uppercase;
-	font-size: 1.4rem;
-	font-stretch: 125%;
-	font-weight: 800;
-}
-
-header div.right {
-	display: flex;
-    align-items: center;
-    gap: 2.4em;
+header > *:not(p) {
+    color: black;
+/*    color: mediumslateblue;*/
+    margin-inline-end: 10px;
 }
 
 main {
-    margin: 16px 32px;
+    height: calc(100% - 8em);
+    overflow-y: auto;
 }
 
-table {
-    margin: 2rem 0;
+footer {
+    padding-inline-start: 16px;
+    height: 3em;
+    background-color: orangered;
 }
-
-img {
-    height: auto;
-    width: auto;
-}
-
-/* https://hack.wesleyac.com/pokemon.html */
-#index tr {
-    display: none;
-}
-
-#filter-Me:checked ~ #index tr[data-type-primary=Me] { display: table-row; }
-#filter-Quilt:checked ~ #index tr[data-type-primary=Quilt] { display: table-row; }
-#filter-Dev:checked ~ #index tr[data-type-primary=Dev] { display: table-row; }
-#filter-Other:checked ~ #index tr[data-type-primary=Other] { display: table-row; }

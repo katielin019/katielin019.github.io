@@ -17,25 +17,46 @@ body {
 
 header {
     padding-inline-start: 16px;
-    height: 5em;
+    height: 5.5em;
     background-color: orangered;
-/*    background-color: yellow;*/
-/*    color: black;*/
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    background-color: black;
+    color: orangered;
 }
 
 header > *:not(p) {
-/*    color: black;*/
-/*    color: mediumslateblue;*/
     margin-inline-end: 10px;
 }
 
 main {
     height: calc(100% - 8em);
     overflow-y: auto;
+    padding-inline-start: 16px;
+    padding-block-start: 32px;
+}
+
+main a {
+    color: gainsboro;
+}
+
+main a:hover {
+    background-color: gainsboro;
+    color: black;
 }
 
 footer {
     padding-inline-start: 16px;
-    height: 3em;
+    padding-block-start: 0px;
+    height: 2.5em;
     background-color: orangered;
+}
+
+footer p {
+    margin-block-start: 10px;
 }

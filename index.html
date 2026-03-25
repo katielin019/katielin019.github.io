@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
-	<link rel=stylesheet type=text/css href=shared.css>
-	<title>🦑 KATIE LIN</title>
-</head>
-<body>
-	<header>
-		<div class="two-cols">
-			<div class="left">
-				<span id="name">KATIE LIN</span>
-				<p>is a software designer</p>
-				<p>and engineer</p>
-			</div>
-			<div class="right">
-				<span><a class=nav href="mailto:celin@alumni.cmu.edu">Email</a></span>
-				<span><a class=nav href="https://github.com/katielin019">GitHub</a></span>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="container two-cols">
-			<div class="left">
-				<section>
-					Hi, I'm Katie. Welcome to my <i>internet abode.</i> I recently graduated from <span>Carnegie Mellon University</span>, where I studied <span>information systems</span>.
-					While I was there, I <a href="https://github.com/ZahirSaiyed/HyprRun">made an iPhone app with some friends</a> using Spotify's <a href="https://developer.spotify.com/documentation/web-api">Web API</a> and <a href="https://developer.spotify.com/documentation/ios">iOS SDK</a>.
-				</section>
-				<div class="break"></div>
-				<section>
-					Previously, I worked as a <span>product designer</span> at a (then seed-stage, now defunct) startup called Quilt.
-					I designed features, made prototypes, and conducted user research + usability testing.
-					While the Quilt app is no longer available for download, you can read about it in press coverage from <a href="https://www.bustle.com/life/how-to-use-quilt-app">Bustle</a> or <a href="https://techcrunch.com/2021/02/10/quilt-an-audio-social-network-focused-on-self-care-raises-3-5-million-in-seed/">TechCrunch</a>.
-				</section>
-				<div class="break"></div>
-				<section>
-					When I'm not at a computer, I enjoy kayaking and playing bass guitar.
-					I'm a proud member of <a href="https://www.puzzlers.org/">The National Puzzlers' League</a> and a lifelong lover of stop-motion animation.
-				</section>
-				<div class="break"></div>
-				<img id="gif" src="assets/under-construction.gif">
-				<div class="break"></div>
-				<section>
-					This is a <span>living document</span>, meaning that it is constantly evolving.
-					I may sometimes <a href="https://notes.andymatuschak.org/zCMhncA1iSE74MKKYQS5PBZ">work with the garage door up</a>.
-					Please pardon the metaphorical dust.
-				</section>
+	<title>katielin019.github.io</title>
+	<style>
+		body.js-enabled {
+			counter-reset: fn;
+		}
 
-				<div class="break"></div>
-				<div class="break"></div>
-				<h3>an informal colophon</h3>
-				<section>
-					This website is written in <span>pure HTML + CSS</span>.
-					To be clear, I have nothing against using frameworks or libraries to accomplish something; I just prefer to use simple tools when possible, because <a href="https://www.untappedjournal.com/issues/issue-11/jarrett-fuller-building-with-simple-tools-longevity">they often stand the test of time</a>.
-					Plus, the best way to manage dependencies is to minimize them.
-				</section>
-			</div>
-			<div class="right">
-				<img src="assets/hypr-run-thumb.png">
-				<img src="assets/prompts-thumb.png">
-				<img src="assets/ratatouille-thumb.png">
-			</div>
-		</div>
-	</main>
-	<footer>
-		<div class="two-cols">
-			<div class="left">
-				find me elsewhere on the internet:
-				<span><a class=nav href="https://www.puzzmo.com/user/fx/whitwaltman">puzzmo</a></span> ~
-				<span><a class=nav href="https://www.bookshelf.town/user/whitwaltman">bookshelf</a></span> ~
-				<span><a class=nav href="https://letterboxd.com/whitwaltman/">letterboxd</a></span>
-			</div>
-			<div class="break"></div>
-			<div class="right">
-				<span>thanks for stopping by :)</span>
-			</div>
-		</div>
-	</footer>
+		.js-enabled .note-container {
+			cursor: pointer;
+			counter-increment: fn;
+		}
+
+
+		.js-enabled .note-container[aria-expanded="false"]::before {
+			content: "[" counter(fn);
+		}
+
+		.note-container::before {
+			content: "[";
+		}
+
+		.note-container::after {
+			content: "]";
+		}
+
+		.js-enabled .note {
+			display: none;
+		}
+
+		.note-container[aria-expanded="true"] .note {
+			display: inline;
+			font-style: italic;
+		}
+
+		.note-container {
+			display: inline;
+			color: darkgreen;
+		}
+
+		.note-container:focus {
+			outline: none;
+		}
+
+		.note-container:focus-visible {
+			outline: 2px solid blue;
+			outline-offset: 2px;
+			border-radius: 2px;
+		}
+	</style>
+</head>
+
+<body>
+	<p>Hi, I'm Katie. I make stuff on the web.</p>
+	<p>I used to have a "portfolio" here, but now I mostly just use this space as a staging ground for little
+		experiments and stuff.</p>
+	<p>My personal site has been relocated <a href="https://positional.space/" target="_blank">elsewhere</a>, but it's
+		in dire need of a tune-up.</p>
+	<p>To contact me, send a piece of electronic mail to <code>${myGithubUsername}</code> at google mail dot com.</p>
+	<hr>
+	<p>Currently, I'm playing around with <a href="/positional-grid">this "positional grid"</a>. It helps to have the
+		staging deployment so I can test it on mobile too.</p>
+	<p>I'll try to update this page <span class="note-container" role="button" tabindex="0" aria-expanded="false"
+			aria-label="Toggle note"><span class="note">when I remember to</span></span>
+		with any other experiments I'm testing out so this can actually function as an index page.</p>
+	<script>
+		document.body.classList.add("js-enabled");
+		const containers = document.querySelectorAll(".note-container");
+		
+		const toggleNote = (el) => {
+			const isExpanded = el.getAttribute("aria-expanded") === "true";
+			el.setAttribute("aria-expanded", !isExpanded);
+		}
+
+		containers.forEach((el) => {
+			el.addEventListener("click", () => toggleNote(el));
+			el.addEventListener("keydown", (e) => {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					toggleNote(el);
+				}
+			});
+		});
+	</script>
 </body>
+
 </html>

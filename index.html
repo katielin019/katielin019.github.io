@@ -5,68 +5,139 @@
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
 	<title>katielin019.github.io</title>
-	<style>
-		body.js-enabled {
-			counter-reset: fn;
-		}
+<style>
+    body.js-enabled {
+        counter-reset: fn;
+    }
 
-		.js-enabled .note-container {
-			cursor: pointer;
-			counter-increment: fn;
-		}
+    .js-enabled .note-container {
+        cursor: pointer;
+        counter-increment: fn;
+    }
 
+    .js-enabled .note-container[aria-expanded="false"]::before {
+        content: "[" counter(fn);
+    }
 
-		.js-enabled .note-container[aria-expanded="false"]::before {
-			content: "[" counter(fn);
-		}
+    .note-container::before {
+        content: "[";
+    }
 
-		.note-container::before {
-			content: "[";
-		}
+    .note-container::after {
+        content: "]";
+    }
 
-		.note-container::after {
-			content: "]";
-		}
+    .js-enabled .note {
+        display: none;
+    }
 
-		.js-enabled .note {
-			display: none;
-		}
+    .note-container[aria-expanded="true"] .note {
+        display: inline;
+        font-style: italic;
+    }
 
-		.note-container[aria-expanded="true"] .note {
-			display: inline;
-			font-style: italic;
-		}
+    .note-container {
+        display: inline;
+        color: blue;
+    }
 
-		.note-container {
-			display: inline;
-			color: darkgreen;
-		}
+    .note-container:focus {
+        outline: none;
+    }
 
-		.note-container:focus {
-			outline: none;
-		}
+    .note-container:focus-visible {
+        outline: 2px solid blue;
+        outline-offset: 2px;
+        border-radius: 2px;
+    }
 
-		.note-container:focus-visible {
-			outline: 2px solid blue;
-			outline-offset: 2px;
-			border-radius: 2px;
-		}
-	</style>
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+    }
+
+    body {
+        max-width: 72ch;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body main p:first-child {
+        margin-top: 0;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    main, footer {
+        padding: 16px;
+    }
+
+    footer {
+        padding-block: 8px;
+        font-size: .9rem;
+    }
+
+    hr {
+        height: 1px;
+        background-color: #aaa;
+        border: none;
+    }
+
+    li {
+        margin-bottom: .75rem;
+    }
+
+    main p {
+        line-height: 1.3;
+    }
+
+    .item {
+        font-weight: 600;
+    }
+</style>
 </head>
 
 <body>
-	<p>Hi, I'm Katie. I make stuff on the web.</p>
-	<p>I used to have a "portfolio" here, but now I mostly just use this space as a staging ground for little
-		experiments and stuff.</p>
-	<p>My personal site has been relocated <a href="https://positional.space/" target="_blank">elsewhere</a>, but it's
-		in dire need of a tune-up.</p>
-	<p>To contact me, send a piece of electronic mail to <code>${myGithubUsername}</code> at google mail dot com.</p>
-	<hr>
-	<p>Currently, I'm playing around with <a href="/positional-grid">this "positional grid"</a>. It helps to have the
-		staging deployment so I can test it on mobile too.</p>
-	<p>I'll try to update this page <span class="note-container" role="button" tabindex="0" aria-expanded="false"
-			aria-label="Toggle note"><span class="note">when I remember to</span></span>
-		with any other experiments I'm testing out so this can actually function as an index page.</p>
+    <main>
+        <p>Hi, I'm Katie. I'm not sure how you got here <span class="note-container" role="button" tabindex="0" aria-expanded="false"
+            aria-label="Toggle note"><span class="note">I don't really link to this site anywhere, although I'm not trying to keep it a secret either</span></span>, but welcome.</p>
+        <p>I used to have a "portfolio" here, but now I mostly just use this space as a staging ground for little
+            experiments and stuff. I'll try to update this page <span class="note-container" role="button" tabindex="0" aria-expanded="false"
+            aria-label="Toggle note"><span class="note">when I remember to</span></span>
+            with any other experiments I'm testing out so this can actually function as an index page.</p>
+        <p>To contact me, send a piece of electronic mail to <code>${myGithubUsername}</code> <span class="note-container" role="button" tabindex="0" aria-expanded="false"
+            aria-label="Toggle note"><span class="note">it's the subdomain of this website</span></span> at google mail dot com.</p>
+        <hr>
+        <h2>Stuff</h2>
+        <ul>
+            <li>
+                <div class="item">
+                    <time>Mar 25</time>: <a href="/positional-grid">positional grid</a>
+                </div>
+                <div class="description">
+                    A square grid with pan and zoom functionality that works on mobile
+                </div>
+            </li>
+            <li>
+                <div class="item">
+                    <time>Apr 14</time>: <a href="/yahooo">yahooo</a>
+                </div>
+                <div class="description">
+                    A vintage Yahoo-inspired home page design <span class="note-container" role="button" tabindex="0" aria-expanded="false"
+                        aria-label="Toggle note"><span class="note">this is only partially laid out, and obviously the links don't lead anywhere, but I still got some valuable insights from making it</span></span>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        Last updated: <time>Tue Apr 14, 2026</time>
+    </footer>
 	<script>
 		document.body.classList.add("js-enabled");
 		const containers = document.querySelectorAll(".note-container");

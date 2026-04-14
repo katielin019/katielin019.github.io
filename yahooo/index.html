@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Document</title>
+<style>
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: ghostwhite;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+header div {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 0;
+    padding-top: 1rem;
+    font-family: system-ui;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+}
+
+footer div {
+    max-width: fit-content;
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    border-top: 1px solid #888;
+    display: flex;
+}
+
+footer div span:not(:last-child)::after {
+    content: "\00B7";
+    margin: 0 .75rem;
+    color: #888;
+}
+
+.two-col {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.subject {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list span:not(:last-child)::after {
+    content: ",";
+}
+
+.list span:last-child::after {
+    content: "...";
+}
+
+li {
+    margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>twelvefourseven.net</h1>
+        </div>
+        <div>
+            <label>Search for:</label>
+            <input type="text">
+            <button>Go</button>
+        </div>
+    </header>
+    <main>
+        <div class="two-col">
+            <ul>
+                <li>
+                    <a class="subject" href="#">Arts and Humanities</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Business and Economy</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Computers and Internet</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Education</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Entertainment</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a class="subject" href="#">Recreation and Sports</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Reference</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Science</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Social Science</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+                <li>
+                    <a class="subject" href="#">Society and Culture</a>
+                    <div class="list">
+                        <span><a href="#">Architecture</a></span>
+                        <span><a href="#">Photography</a></span>
+                        <span><a href="#">Literature</a></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <span><a href="#">How to Suggest a Site</a></span>
+            <span><a href="#">Colophon</a></span>
+            <span><a href="#">Explore</a></span>
+        </div>
+    </footer>
+</body>
+</html>

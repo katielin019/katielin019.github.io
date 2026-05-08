@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Albums</title>
+<script>
+    if (!CSS.supports('animation-timeline', 'view()')) {
+        console.warn("⚠️ Scroll-driven animations not supported. Loading polyfill...");
+        const script = document.createElement('script');
+        script.src = "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
+        document.head.appendChild(script);
+    }
+</script>
+<style>
+    :root {
+        --cover-size: 15rem;
+        --size: 6;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #111;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    @keyframes rotate-cover {
+        0% { transform: translateX(-100%) rotateY(-45deg); opacity: 0.5; }
+        35% { transform: translateX(0) rotateY(-45deg); opacity: 1; }
+        50% { transform: rotateY(0deg) translateZ(1em) scale(1.5); opacity: 1; }
+        65% { transform: translateX(0) rotateY(45deg); opacity: 1; }
+        100% { transform: translateX(100%) rotateY(45deg); opacity: 0.5; }
+    }
+
+    @keyframes adjust-z-index {
+        0% {
+            z-index: 1;
+        }
+        50% {
+            z-index: 100;
+        }
+        100% {
+            z-index: 1;
+        }
+    }
+
+    .cards-wrapper {
+        width: calc(var(--cover-size) * var(--size));
+        margin: 0 auto;
+        max-width: 90vw;
+        overflow-x: scroll;
+        padding: calc(var(--cover-size) / 3 * 2) 0;
+        position: relative;
+        max-width: 90vw;
+
+        perspective: 40em;
+        outline: 1px solid #333;
+        background: rgba(0 0 0 / 0.5);
+        scroll-snap-type: x mandatory;
+        box-sizing: border-box;
+    }
+
+    .cards {
+        display: flex;
+        list-style: none;
+        whitespace: nowrap;
+        transform-style: preserve-3d;
+
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cards::before, .cards::after {
+        content: "";
+        flex: 0 0 calc(50% - (var(--cover-size) / 2));
+    }
+
+    .cards li {
+        flex: 0 0 var(--cover-size);
+        position: relative;
+
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+
+        perspective: 40em;
+        scroll-snap-align: center;
+        animation: linear adjust-z-index both;
+        animation-timeline: view(inline);
+    }
+
+    .cards li img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        animation: rotate-cover linear both;
+        animation-timeline: view(inline);
+    }
+</style>
+</head>
+<body>
+    <div class="cards-wrapper">
+        <ul class="cards">
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273767b6fb2ca6416973d8a2867" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b2735901aaa980d3e714bf01171c" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273bb076ef98d5f02467a3be611" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273f88b43d15fd14e9525338b59" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273a351e38dbc7dcdf48b48b4a8" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273cbb38cf3f5a5abe064afa94a" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273e6272ad26e7a55bc342a6dd0" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273e35e2e2a4bfa8a30a78fc532" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273e82c9c2532030516608bc5e4" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b27328b8b9b46428896e6491e97a" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273dbd83e179619408e5d05cc99" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b27344c6d644b287a80af9591fe6" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b27323d41bf736920a032e222a78" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b27341a0b1bef093cca48da67150" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="https://i.scdn.co/image/ab67616d0000b273a351e38dbc7dcdf48b48b4a8" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+            <li>
+                <img draggable="false" src="" width="640" height="640">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
